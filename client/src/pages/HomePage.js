@@ -12,6 +12,7 @@ class HomePage extends Component{
 
                 {/* Drop Down Selects to fetch compiled data */}
                 <FlightForm/>
+                
                 <FlightTable/>
             </div>
         )

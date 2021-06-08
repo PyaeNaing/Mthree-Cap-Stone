@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import FlightItem from './FlightItem';
+import '../css/FlightItem.css'
+
 const FlightTable = () => {
 
         const[data, setData] = useState([]);
@@ -29,7 +31,7 @@ const FlightTable = () => {
           console.log()
 
     return(
-        <div>
+        <div className='fs-results'>
             {data.map(item => (
                 <FlightItem
                 key={item.QuoteId}

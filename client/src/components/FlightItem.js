@@ -1,15 +1,16 @@
-import React from 'react'
-import '../css/flightItem.css'
+import React from 'react';
+import FlightDate from './FlightDate'
+import '../css/FlightItem.css';
 
 const FlightItem = (props) =>{
-    console.log(props)
+
     return(
-        <div className="fs-result">
+        <div className="fs-offer">
             <div className="fs-offer-col">
                 {/* <p> ID : {props.key} </p> */}
+                <FlightDate date={new Date(props.DepartureDate)}/>
                 <p> Origin ID : {props.OriginId}</p>
                 <p> Destination ID : {props.DestinationId}</p>
-                <p> Depature Date : {props.DepartureDate}</p>
                 <p>Price : {props.MinPrice}</p>
 
             </div>
