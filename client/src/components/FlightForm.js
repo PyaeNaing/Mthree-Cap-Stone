@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -11,20 +12,20 @@ import { BsChevronDoubleRight } from "react-icons/bs";
 class FlightForm extends Component {
 
     constructor(props) {
-        super(props); 
+        super(props);
         this.state = {
-            from: '_____',
-            to: '_____', 
+            from: -1,
+            to: -1,
 
         }
     }
 
     changeFrom = event => {
-        this.setState({from: event.target.value});
+        this.setState({ from: event.target.value });
     }
-    
+
     changeTo = event => {
-        this.setState({to: event.target.value});
+        this.setState({ to: event.target.value });
     }
 
 
@@ -34,21 +35,25 @@ class FlightForm extends Component {
                 <form>
                     <Row>
                         <Col>
-                            <select  onChange={this.changeFrom}>
+                            <select onChange={this.changeFrom}>
                                 <option disabled selected>Leaving From...</option>
-                                <option value="LAX">LAX</option>
-                                <option value="D2">Destination from 2</option>
-                                <option value="D3">Destination from 3</option>
+                                {this.props.data.map((place, index) => {
+                                    return (
+                                        <option value={index}>{place.PlaceName}</option>
+                                    )
+                                })}
                             </select>
                         </Col>
-                        
-                        
+
+
                         <Col>
                             <select onChange={this.changeTo}>
                                 <option disabled selected>Going to...</option>
-                                <option value="JFK">JFK</option>
-                                <option value="D2">Destionation to 2</option>
-                                <option value="D3">Destionation to 3</option>
+                                {this.props.data.map((place, index) => {
+                                    return (
+                                        <option value={index}>{place.PlaceName}</option>
+                                    )
+                                })}
                             </select>
                         </Col>
                     </Row>
@@ -56,26 +61,53 @@ class FlightForm extends Component {
 
                 <hr />
 
-                <Jumbotron fluid style={{backgroundColor: "#6c6c82", height: "25vh"}}>
+                <Jumbotron fluid style={{ backgroundColor: "#6c6c82" }}>
                     <Container>
                         <Row>
                             <Col>
-                                <h1>{this.state.from}</h1>
+                                <h1>{(this.state.from >= 0) ? this.props.data[this.state.from].PlaceName : ""}</h1>
                             </Col>
                             <Col>
-                                <BsChevronDoubleRight size={50}/>
+                                <BsChevronDoubleRight size={50} />
                             </Col>
                             <Col>
-                                <h1>{this.state.to}</h1>
+                                <h1>{(this.state.to >= 0) ? this.props.data[this.state.to].PlaceName : ""}</h1>
                             </Col>
                         </Row>
-                        
+
+                        <hr />
+
                         <Row>
                             <Col>
+                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].CountryName : ""}</h3>
                             </Col>
+                            <Col>
+                                <BsChevronDoubleRight size={25} />
+                            </Col>
+                            <Col>
+                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].CountryName : ""}</h3>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
+                            </Col>
+                            <Col>
+                                <BsChevronDoubleRight size={25} />
+                            </Col>
+                            <Col>
+                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].RegionId : ""}</h3>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Button>Find best Month to Travel</Button>
                         </Row>
                     </Container>
                 </Jumbotron>
+
+
+                
 
             </Container>
         )

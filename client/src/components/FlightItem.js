@@ -1,6 +1,6 @@
 import React from 'react';
 import FlightDate from './FlightDate'
-import '../css/FlightItem.css';
+import '../css/flightitem.css';
 
 const FlightItem = (props) =>{
 
