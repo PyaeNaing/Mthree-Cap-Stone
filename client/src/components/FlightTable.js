@@ -31,7 +31,7 @@ const FlightTable = () => {
           console.log()
 
     return(
-        <div className='fs-results'>
+        <div className='flight-results'>
             {data.map(item => (
                 <FlightItem
                 key={item.QuoteId}
