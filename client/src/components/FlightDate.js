@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './FlightDate.css';
+import '../css/FlightDate.css';
 
 const ExpenseDate = (props) => {
   const month = props.date.toLocaleString('en-US', { month: 'long' });

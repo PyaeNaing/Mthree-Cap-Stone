@@ -5,13 +5,13 @@ import '../css/FlightItem.css';
 const FlightItem = (props) =>{
 
     return(
-        <div className="fs-offer">
-            <div className="fs-offer-col">
+        <div className="flight-item">
                 {/* <p> ID : {props.key} </p> */}
                 <FlightDate date={new Date(props.DepartureDate)}/>
-                <p> Origin ID : {props.OriginId}</p>
-                <p> Destination ID : {props.DestinationId}</p>
-                <p>Price : {props.MinPrice}</p>
+                <div className="flight-item__description">
+                <h2> Origin ID : {props.OriginId}</h2>
+                <h2> Destination ID : {props.DestinationId}</h2>
+                <div className="flight-item__price">Price : ${props.MinPrice}</div>
 
             </div>
         </div>
