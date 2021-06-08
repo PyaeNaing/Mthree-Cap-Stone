@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-
+import FlightItem from './FlightItem';
 const FlightTable = () => {
 
         const[data, setData] = useState([]);
@@ -26,12 +26,22 @@ const FlightTable = () => {
             getData()
           },[])
 
+          console.log()
+
     return(
         <div>
-            Table
+            {data.map(item => (
+                <FlightItem
+                key={item.QuoteId}
+                OriginId={item.OutboundLeg.OriginId}
+                DestinationId={item.OutboundLeg.DestinationId}
+                DepartureDate={item.OutboundLeg.DepartureDate}
+                MinPrice={item.MinPrice}/>
+            ))}
         </div>
 
     );
+    
 }
 
 export default FlightTable

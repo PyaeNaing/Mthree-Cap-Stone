@@ -1,0 +1,13 @@
+  
+.fs-offers {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    margin-top: 64px;
+}
+
+.fs-offer-col {
+    display: flex;
+    flex-direction: column;
+}
