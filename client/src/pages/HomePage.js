@@ -33,13 +33,15 @@ class HomePage extends Component {
 
         return (
             <div>
-                <Navigation/>
-                <div className="text-center">
-                    {/* <h1>Flight Analysis</h1> */}
+                <Navigation />
+                <div className="container">
+                    <div className="text-center">
+                        {/* <h1>Flight Analysis</h1> */}
 
-                    {/* Drop Down Selects to fetch compiled data */}
-                    <FlightForm data={this.state.places} />
-                    <FlightTable />
+                        {/* Drop Down Selects to fetch compiled data */}
+                        <FlightForm data={this.state.places} />
+                        <FlightTable />
+                    </div>
                 </div>
             </div>
 
