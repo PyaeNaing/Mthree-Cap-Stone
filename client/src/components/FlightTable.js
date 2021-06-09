@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import FlightItem from './FlightItem';
-import {Button, Form} from "react-bootstrap"
+import {Button, Form, Spinner} from "react-bootstrap"
 import '../css/FlightItem.css'
 
 const FlightTable = () => {
 
+  const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [maxValue, setMaxValue] = useState('');
+  
+  const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+  }
+  
+  /*Use like so*/
+  
+
+
   const getData = () => {
+    setLoading(true);
     fetch('DUMMY_DATA.json'
       , {
         headers: {
@@ -18,31 +29,40 @@ const FlightTable = () => {
       }
     )
       .then(function (response) {
-        // console.log(response)
         return response.json();
       })
       .then(function (myJson) {
-        // console.log(myJson);
         setData(myJson);
         setFilteredData(myJson);
+        setLoading(false);
       });
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if(maxValue.length === 0) return setFilteredData(data);
+
+    setLoading(true);
+    await sleep(500);
+    if(maxValue.length === 0) {
+      setLoading(false);
+      return setFilteredData(data);
+    }
 
     setFilteredData(data.filter(item => {
       return item.MinPrice < maxValue;
     }))
+
     setMaxValue('');
+    setLoading(false);
   }
 
   useEffect(() => {
+    
     getData()
   }, [])
 
   return (
+
     <div className='flight-results'>
       <Form onSubmit={handleSubmit}>
         <label>
@@ -51,14 +71,17 @@ const FlightTable = () => {
         </label>
         <Button variant="primary" type="submit">Submit</Button>
       </Form>
-      {filteredData.map(item => (
+      
+      {isLoading ? (<Spinner className='spinner-center' animation="border"/>) : 
+      (filteredData.map(item => (
         <FlightItem
           key={item.QuoteId}
           OriginId={item.OutboundLeg.OriginId}
           DestinationId={item.OutboundLeg.DestinationId}
           DepartureDate={item.OutboundLeg.DepartureDate}
           MinPrice={item.MinPrice} />
-      ))}
+      )))}
+      {}
     </div>
 
   );
