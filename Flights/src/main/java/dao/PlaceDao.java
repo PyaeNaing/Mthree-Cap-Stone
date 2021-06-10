@@ -7,6 +7,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 public interface PlaceDao {
-    void addPlace(String location) throws UnsupportedEncodingException, UnirestException;
+    void addPlaces(String location) throws UnsupportedEncodingException, UnirestException;
     List<Place> getAll();
 }

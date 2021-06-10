@@ -46,7 +46,7 @@ public class PlaceDaoImpl implements PlaceDao {
     }
 
     @Override
-    public void addPlace(String location) throws UnsupportedEncodingException, UnirestException {
+    public void addPlaces(String location) throws UnsupportedEncodingException, UnirestException {
         // get send location to external api
         // add inserts in a for loop based on the array results:
         results = getLocationsFromQuery(location);
@@ -84,12 +84,12 @@ public class PlaceDaoImpl implements PlaceDao {
                         sql,
                         Statement.RETURN_GENERATED_KEYS);
 
-                statement.setString(1, place.getPlaceId());
-                statement.setString(2, place.getPlaceName());
-                statement.setString(3, place.getCountryId());
-                statement.setString(4, place.getCityId());
-                statement.setString(5, place.getCountryName());
-                statement.setString(6, place.getRegionId());
+                statement.setString(1, placeId);
+                statement.setString(2, placeName);
+                statement.setString(3, countryId);
+                statement.setString(4, cityId);
+                statement.setString(5, countryName);
+                statement.setString(6, regionId);
                 return statement;
             });
         }
@@ -121,17 +121,6 @@ public class PlaceDaoImpl implements PlaceDao {
     private String snipSky(JSONObject jsonObj, String key) {
         String query = jsonObj.getString(key);
         return StringUtils.substring(query, 0, query.length()-4);
-    }
-
-    public JSONArray getFlights(String in, String out, String outbound) throws UnsupportedEncodingException, UnirestException {
-        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/%s/%s/%s";
-        String in_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
-        String out_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
-        String outbound_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
-        String url = String.format(base, in_encode, out_encode, outbound_encode);
-        JSONObject myObj = getRapidAPICall(url).getBody().getObject();
-        JSONArray results = myObj.getJSONArray("Quotes");
-        return results;
     }
 
     private static final class PlaceMapper implements RowMapper<Place> {

@@ -1,10 +1,11 @@
 package controllers;
 
+import com.mashape.unirest.http.exceptions.UnirestException;
 import dao.PlaceDao;
 import models.Place;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @RestController
@@ -21,4 +22,8 @@ public class PlaceController {
         return dao.getAll();
     }
 
+    @PostMapping
+    public void addPlaces(@RequestBody String location) throws UnsupportedEncodingException, UnirestException {
+       dao.addPlaces(location);
+    }
 }

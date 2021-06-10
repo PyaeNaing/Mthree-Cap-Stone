@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d1c5992-9e62-4493-b2fd-abe8b9a0f5fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flights/FlightsAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/FlightsAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flights/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flights/src/main/java/models/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/src/main/java/models/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flights/src/main/java/controllers/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/src/main/java/controllers/PlaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flights/src/main/java/dao/PlaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/src/main/java/dao/PlaceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flights/src/main/java/dao/PlaceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/src/main/java/dao/PlaceDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flights/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Flights/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +45,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Flights/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.java.dao" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="FlightsAPI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
