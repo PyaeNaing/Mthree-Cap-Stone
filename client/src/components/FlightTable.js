@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import FlightItem from './FlightItem';
-import { Button, Form, PageItem, Spinner } from "react-bootstrap"
+import { Button, Form, Spinner, Row, Col } from "react-bootstrap"
 import axios from 'axios';
 import '../css/FlightItem.css'
 import Pagination from './Pagination';
+import SelectSearch from './SelectSearch';
 
 const FlightTable = () => {
 
@@ -19,7 +20,7 @@ const FlightTable = () => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
 
   const currentPost = filteredData.slice(indexOfFirstPost, indexOfLastPost);
-  const paginate = (pageNumber) => {setCurrentPage(pageNumber)}
+  const paginate = (pageNumber) => { setCurrentPage(pageNumber) }
 
   // :)
   const sleep = (milliseconds) => {
@@ -38,7 +39,7 @@ const FlightTable = () => {
     }
 
     setFilteredData(flightData.filter(item => {
-      return item.MinPrice < maxValue;
+      return item.MinPrice < parseInt(maxValue);
     }))
 
     setMaxValue('');
@@ -60,16 +61,17 @@ const FlightTable = () => {
   return (
 
     <div className='flight-results'>
-      
+
       <Form onSubmit={handleSubmit}>
-        <label>
-          Maximun Price:
-    <input type="number" value={maxValue} onChange={e => setMaxValue(e.target.value)} />
-        </label>
-        <Button variant="primary" type="submit">Submit</Button>
+        <Col>
+          <SelectSearch />
+          <input type="text" value={maxValue} onChange={e => setMaxValue(e.target.value)} />
+          <Button variant="primary" type="submit">Submit</Button>
+        </Col>
+
       </Form>
-      <div style={{marginTop:'10px'}}>
-      <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate}/>
+      <div style={{ marginTop: '10px' }}>
+        <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate} />
       </div>
       {isLoading ? (<Spinner className='spinner-center' animation="border" />) :
         (currentPost.map(item => (
@@ -80,7 +82,7 @@ const FlightTable = () => {
             DepartureDate={item.OutboundLeg.DepartureDate}
             MinPrice={item.MinPrice} />
         )))}
-        <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate}/>
+      <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate} />
     </div>
   );
 }
