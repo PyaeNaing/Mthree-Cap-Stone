@@ -33,6 +33,14 @@ public class APICalls2 {
         return results;
     }
 
+    public JSONArray getFromToFlights(String fromPlace, String toPlace) throws UnirestException, UnsupportedEncodingException {
+        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/"+fromPlace+"/"+toPlace+"/anytime/anytime";
+        String url = String.format(base, URLEncoder.encode(fromPlace, StandardCharsets.UTF_8.toString()));
+        JSONObject myObj = getRapidAPICall(url).getBody().getObject();
+        JSONArray results = myObj.getJSONArray("Quotes");
+        return results;
+    }
+
     public void printLocationTableFromQuery(String query) throws UnirestException, UnsupportedEncodingException {
         JSONArray results = getLocationsFromQuery(query);
         JSONObject jsonObj;
