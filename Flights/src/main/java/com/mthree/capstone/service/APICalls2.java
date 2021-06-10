@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Flights/src/main/java/com/mthree/capstone/service/APICalls2.java
 package com.mthree.capstone.service;
+=======
+package com.mthree.flightAPI.controllers;
+>>>>>>> frontend:Flights/src/main/java/com/mthree/flightAPI/controllers/APICalls2.java
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
