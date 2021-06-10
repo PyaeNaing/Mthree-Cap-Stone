@@ -1,222 +1,5106 @@
 [
         {
             "QuoteId": 1,
-            "MinPrice": 30,
-            "Direct": true,
-            "OutboundLeg": {
-                "CarrierIds": [
-                    1065
-                ],
-                "OriginId": 65363,
-                "DestinationId": 82097,
-                "DepartureDate": "2021-06-19T00:00:00"
-            },
-            "InboundLeg": {
-                "CarrierIds": [
-                    1065
-                ],
-                "OriginId": 82097,
-                "DestinationId": 65363,
-                "DepartureDate": "2021-06-21T00:00:00"
-            },
-            "QuoteDateTime": "2021-06-07T16:55:00"
-        },
-        {
-            "QuoteId": 2,
-            "MinPrice": 51,
+            "MinPrice": 264,
             "Direct": false,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 67759,
-                "DestinationId": 40924,
-                "DepartureDate": "2021-06-15T00:00:00"
+                "OriginId": 65698,
+                "DestinationId": 60987,
+                "DepartureDate": "2021-10-04T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 40924,
-                "DestinationId": 67759,
-                "DepartureDate": "2021-06-22T00:00:00"
+                "OriginId": 60987,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-11T00:00:00"
             },
-            "QuoteDateTime": "2021-06-07T19:03:00"
+            "QuoteDateTime": "2021-06-08T17:02:00"
         },
         {
-            "QuoteId": 3,
-            "MinPrice": 99,
+            "QuoteId": 2,
+            "MinPrice": 307,
             "Direct": true,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1065
+                    870
                 ],
-                "OriginId": 67759,
-                "DestinationId": 81925,
-                "DepartureDate": "2021-09-29T00:00:00"
+                "OriginId": 65655,
+                "DestinationId": 60987,
+                "DepartureDate": "2021-10-04T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1065
+                    870
                 ],
-                "OriginId": 81925,
+                "OriginId": 60987,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-10-11T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:02:00"
+        },
+        {
+            "QuoteId": 3,
+            "MinPrice": 309,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 59078,
+                "DestinationId": 68033,
+                "DepartureDate": "2022-03-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 68033,
+                "DestinationId": 59078,
+                "DepartureDate": "2022-03-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T21:35:00"
+        },
+        {
+            "QuoteId": 4,
+            "MinPrice": 327,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 59078,
+                "DestinationId": 42995,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 42995,
+                "DestinationId": 59078,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T20:23:00"
+        },
+        {
+            "QuoteId": 5,
+            "MinPrice": 334,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 65655,
+                "DestinationId": 73076,
+                "DepartureDate": "2022-03-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 73076,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T20:39:00"
+        },
+        {
+            "QuoteId": 6,
+            "MinPrice": 351,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 59078,
+                "DestinationId": 65368,
+                "DepartureDate": "2022-02-20T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65368,
+                "DestinationId": 59078,
+                "DepartureDate": "2022-02-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T14:17:00"
+        },
+        {
+            "QuoteId": 7,
+            "MinPrice": 353,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1247
+                ],
+                "OriginId": 65655,
+                "DestinationId": 81727,
+                "DepartureDate": "2021-10-05T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1247
+                ],
+                "OriginId": 81727,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-10-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:42:00"
+        },
+        {
+            "QuoteId": 8,
+            "MinPrice": 358,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74908,
+                "DepartureDate": "2022-01-29T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 74908,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:29:00"
+        },
+        {
+            "QuoteId": 9,
+            "MinPrice": 361,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 65698,
+                "DestinationId": 58436,
+                "DepartureDate": "2021-07-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1760
+                ],
+                "OriginId": 58436,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-19T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:52:00"
+        },
+        {
+            "QuoteId": 10,
+            "MinPrice": 367,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81907,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 81907,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T19:19:00"
+        },
+        {
+            "QuoteId": 11,
+            "MinPrice": 371,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81727,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 81727,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-02T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T10:00:00"
+        },
+        {
+            "QuoteId": 12,
+            "MinPrice": 381,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1218
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68033,
+                "DepartureDate": "2022-01-31T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1218
+                ],
+                "OriginId": 68033,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:54:00"
+        },
+        {
+            "QuoteId": 13,
+            "MinPrice": 386,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1081
+                ],
+                "OriginId": 65655,
                 "DestinationId": 67759,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1081
+                ],
+                "OriginId": 67759,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:37:00"
+        },
+        {
+            "QuoteId": 14,
+            "MinPrice": 393,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65368,
+                "DepartureDate": "2022-01-24T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65368,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:25:00"
+        },
+        {
+            "QuoteId": 15,
+            "MinPrice": 393,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81907,
+                "DepartureDate": "2022-03-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 81907,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-21T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T15:44:00"
+        },
+        {
+            "QuoteId": 16,
+            "MinPrice": 394,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42995,
+                "DepartureDate": "2022-02-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 42995,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-07T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T12:33:00"
+        },
+        {
+            "QuoteId": 17,
+            "MinPrice": 396,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 72900,
+                "DepartureDate": "2021-11-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 72900,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T17:03:00"
+        },
+        {
+            "QuoteId": 18,
+            "MinPrice": 411,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65655,
+                "DestinationId": 84497,
+                "DepartureDate": "2021-11-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 84497,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:51:00"
+        },
+        {
+            "QuoteId": 19,
+            "MinPrice": 414,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 49369,
+                "DestinationId": 52060,
+                "DepartureDate": "2022-01-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 52060,
+                "DestinationId": 49369,
+                "DepartureDate": "2022-02-02T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:53:00"
+        },
+        {
+            "QuoteId": 20,
+            "MinPrice": 415,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 49369,
+                "DestinationId": 74908,
+                "DepartureDate": "2022-04-13T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 74908,
+                "DestinationId": 49369,
+                "DepartureDate": "2022-05-04T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T08:13:00"
+        },
+        {
+            "QuoteId": 21,
+            "MinPrice": 418,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40924,
+                "DepartureDate": "2021-12-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 40924,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-05T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T18:56:00"
+        },
+        {
+            "QuoteId": 22,
+            "MinPrice": 419,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 49369,
+                "DestinationId": 81665,
+                "DepartureDate": "2021-10-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81665,
+                "DestinationId": 49369,
+                "DepartureDate": "2021-10-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T14:33:00"
+        },
+        {
+            "QuoteId": 23,
+            "MinPrice": 421,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 89123,
+                "DepartureDate": "2022-02-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 89123,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T20:56:00"
+        },
+        {
+            "QuoteId": 24,
+            "MinPrice": 421,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 75203,
+                "DepartureDate": "2022-03-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 75203,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-04-04T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T19:38:00"
+        },
+        {
+            "QuoteId": 25,
+            "MinPrice": 421,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 60760,
+                "DepartureDate": "2022-01-19T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 60760,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T15:17:00"
+        },
+        {
+            "QuoteId": 26,
+            "MinPrice": 422,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 80055,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 80055,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T18:59:00"
+        },
+        {
+            "QuoteId": 27,
+            "MinPrice": 427,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74617,
+                "DepartureDate": "2021-11-09T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 74617,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T14:03:00"
+        },
+        {
+            "QuoteId": 28,
+            "MinPrice": 439,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81486,
+                "DepartureDate": "2022-03-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81486,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T19:43:00"
+        },
+        {
+            "QuoteId": 29,
+            "MinPrice": 439,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1384
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82305,
+                "DepartureDate": "2022-02-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 82305,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T18:48:00"
+        },
+        {
+            "QuoteId": 30,
+            "MinPrice": 440,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67759,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 67759,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T18:36:00"
+        },
+        {
+            "QuoteId": 31,
+            "MinPrice": 440,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81486,
+                "DepartureDate": "2022-03-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 81486,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T19:54:00"
+        },
+        {
+            "QuoteId": 32,
+            "MinPrice": 444,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43282,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 43282,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T09:17:00"
+        },
+        {
+            "QuoteId": 33,
+            "MinPrice": 445,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 50391,
+                "DepartureDate": "2022-01-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 50391,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:02:00"
+        },
+        {
+            "QuoteId": 34,
+            "MinPrice": 453,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 58440,
+                "DepartureDate": "2021-11-13T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 58440,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-13T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T09:46:00"
+        },
+        {
+            "QuoteId": 35,
+            "MinPrice": 455,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79333,
+                "DepartureDate": "2021-11-06T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 79333,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T12:35:00"
+        },
+        {
+            "QuoteId": 36,
+            "MinPrice": 457,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 59060,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 59060,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T10:40:00"
+        },
+        {
+            "QuoteId": 37,
+            "MinPrice": 458,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47847,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 47847,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T10:37:00"
+        },
+        {
+            "QuoteId": 38,
+            "MinPrice": 459,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45192,
+                "DepartureDate": "2021-10-29T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 45192,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T14:37:00"
+        },
+        {
+            "QuoteId": 39,
+            "MinPrice": 463,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42929,
+                "DepartureDate": "2021-12-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 42929,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-05T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:14:00"
+        },
+        {
+            "QuoteId": 40,
+            "MinPrice": 464,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44963,
+                "DepartureDate": "2021-11-05T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 44963,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-07T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T21:22:00"
+        },
+        {
+            "QuoteId": 41,
+            "MinPrice": 465,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68528,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 68528,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:26:00"
+        },
+        {
+            "QuoteId": 42,
+            "MinPrice": 469,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82097,
+                "DepartureDate": "2022-01-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 82097,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T20:17:00"
+        },
+        {
+            "QuoteId": 43,
+            "MinPrice": 470,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 46914,
+                "DepartureDate": "2022-02-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 46914,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T19:56:00"
+        },
+        {
+            "QuoteId": 44,
+            "MinPrice": 487,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74964,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    835
+                ],
+                "OriginId": 74964,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T23:45:00"
+        },
+        {
+            "QuoteId": 45,
+            "MinPrice": 488,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1523
+                ],
+                "OriginId": 65698,
+                "DestinationId": 73076,
+                "DepartureDate": "2022-03-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1523
+                ],
+                "OriginId": 73076,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T17:53:00"
+        },
+        {
+            "QuoteId": 46,
+            "MinPrice": 488,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65363,
+                "DepartureDate": "2021-10-27T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65363,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:18:00"
+        },
+        {
+            "QuoteId": 47,
+            "MinPrice": 502,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74565,
+                "DepartureDate": "2021-07-06T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 74565,
+                "DestinationId": 65698,
                 "DepartureDate": "2021-10-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T17:58:00"
+        },
+        {
+            "QuoteId": 48,
+            "MinPrice": 505,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40979,
+                "DepartureDate": "2022-01-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 40979,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:33:00"
+        },
+        {
+            "QuoteId": 49,
+            "MinPrice": 511,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81665,
+                "DepartureDate": "2022-03-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 81665,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-21T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:41:00"
+        },
+        {
+            "QuoteId": 50,
+            "MinPrice": 511,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47118,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 47118,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:28:00"
+        },
+        {
+            "QuoteId": 51,
+            "MinPrice": 516,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47175,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 47175,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:27:00"
+        },
+        {
+            "QuoteId": 52,
+            "MinPrice": 520,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81622,
+                "DepartureDate": "2021-10-26T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 81622,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T03:10:00"
+        },
+        {
+            "QuoteId": 53,
+            "MinPrice": 521,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 75440,
+                "DepartureDate": "2022-01-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 75440,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:50:00"
+        },
+        {
+            "QuoteId": 54,
+            "MinPrice": 525,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74728,
+                "DepartureDate": "2021-11-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 74728,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:49:00"
+        },
+        {
+            "QuoteId": 55,
+            "MinPrice": 526,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45141,
+                "DepartureDate": "2022-01-03T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 45141,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:45:00"
+        },
+        {
+            "QuoteId": 56,
+            "MinPrice": 528,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54470,
+                "DepartureDate": "2021-10-27T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 54470,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T11:40:00"
+        },
+        {
+            "QuoteId": 57,
+            "MinPrice": 529,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84755,
+                "DepartureDate": "2022-02-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 84755,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-07T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:28:00"
+        },
+        {
+            "QuoteId": 58,
+            "MinPrice": 529,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45156,
+                "DepartureDate": "2021-10-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45156,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:27:00"
+        },
+        {
+            "QuoteId": 59,
+            "MinPrice": 530,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 72267,
+                "DepartureDate": "2022-01-13T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 72267,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T18:09:00"
+        },
+        {
+            "QuoteId": 60,
+            "MinPrice": 531,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42929,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 42929,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T19:30:00"
+        },
+        {
+            "QuoteId": 61,
+            "MinPrice": 534,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40979,
+                "DepartureDate": "2022-03-28T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 40979,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-04-05T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T18:31:00"
+        },
+        {
+            "QuoteId": 62,
+            "MinPrice": 539,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 51540,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 51540,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-21T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T18:07:00"
+        },
+        {
+            "QuoteId": 63,
+            "MinPrice": 547,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 49328,
+                "DepartureDate": "2021-09-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 49328,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T18:06:00"
+        },
+        {
+            "QuoteId": 64,
+            "MinPrice": 549,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84312,
+                "DepartureDate": "2021-08-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 84312,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-11T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T13:01:00"
+        },
+        {
+            "QuoteId": 65,
+            "MinPrice": 551,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47118,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 47118,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:56:00"
+        },
+        {
+            "QuoteId": 66,
+            "MinPrice": 551,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45447,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 45447,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T21:21:00"
+        },
+        {
+            "QuoteId": 67,
+            "MinPrice": 560,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79843,
+                "DepartureDate": "2021-11-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 79843,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T17:55:00"
+        },
+        {
+            "QuoteId": 68,
+            "MinPrice": 561,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43270,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 43270,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T19:22:00"
+        },
+        {
+            "QuoteId": 69,
+            "MinPrice": 562,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82054,
+                "DepartureDate": "2021-12-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 82054,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:37:00"
+        },
+        {
+            "QuoteId": 70,
+            "MinPrice": 564,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67812,
+                "DepartureDate": "2021-11-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 67812,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T06:25:00"
+        },
+        {
+            "QuoteId": 71,
+            "MinPrice": 566,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65363,
+                "DepartureDate": "2022-01-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65363,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-11T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T19:11:00"
+        },
+        {
+            "QuoteId": 72,
+            "MinPrice": 570,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74920,
+                "DepartureDate": "2021-10-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 74920,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T21:10:00"
+        },
+        {
+            "QuoteId": 73,
+            "MinPrice": 570,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44959,
+                "DepartureDate": "2021-11-05T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 44959,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T22:11:00"
+        },
+        {
+            "QuoteId": 74,
+            "MinPrice": 572,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 75572,
+                "DepartureDate": "2021-12-29T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 75572,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T22:29:00"
+        },
+        {
+            "QuoteId": 75,
+            "MinPrice": 572,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 67662,
+                "DestinationId": 73078,
+                "DepartureDate": "2021-12-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 73078,
+                "DestinationId": 67662,
+                "DepartureDate": "2021-12-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T02:33:00"
+        },
+        {
+            "QuoteId": 76,
+            "MinPrice": 574,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40530,
+                "DepartureDate": "2021-11-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 40530,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:54:00"
+        },
+        {
+            "QuoteId": 77,
+            "MinPrice": 578,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67853,
+                "DepartureDate": "2022-03-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 67853,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T06:37:00"
+        },
+        {
+            "QuoteId": 78,
+            "MinPrice": 578,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42460,
+                "DepartureDate": "2021-11-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 42460,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T14:59:00"
+        },
+        {
+            "QuoteId": 79,
+            "MinPrice": 579,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 93617,
+                "DepartureDate": "2022-02-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 93617,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:33:00"
+        },
+        {
+            "QuoteId": 80,
+            "MinPrice": 580,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65748,
+                "DepartureDate": "2022-03-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65748,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-21T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T20:49:00"
+        },
+        {
+            "QuoteId": 81,
+            "MinPrice": 584,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68537,
+                "DepartureDate": "2022-01-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68537,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T13:41:00"
+        },
+        {
+            "QuoteId": 82,
+            "MinPrice": 586,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43238,
+                "DepartureDate": "2022-02-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 43238,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:22:00"
+        },
+        {
+            "QuoteId": 83,
+            "MinPrice": 588,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43234,
+                "DepartureDate": "2021-11-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 43234,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T12:43:00"
+        },
+        {
+            "QuoteId": 84,
+            "MinPrice": 588,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84947,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 84947,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T09:57:00"
+        },
+        {
+            "QuoteId": 85,
+            "MinPrice": 590,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 58973,
+                "DepartureDate": "2021-10-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 58973,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T07:44:00"
+        },
+        {
+            "QuoteId": 86,
+            "MinPrice": 596,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 57014,
+                "DepartureDate": "2022-02-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 57014,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-07T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T12:49:00"
+        },
+        {
+            "QuoteId": 87,
+            "MinPrice": 596,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40053,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 40053,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-12T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:37:00"
+        },
+        {
+            "QuoteId": 88,
+            "MinPrice": 596,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1713
+                ],
+                "OriginId": 67662,
+                "DestinationId": 58440,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1713
+                ],
+                "OriginId": 58440,
+                "DestinationId": 67662,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T19:26:00"
+        },
+        {
+            "QuoteId": 89,
+            "MinPrice": 597,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68178,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 68178,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T09:14:00"
+        },
+        {
+            "QuoteId": 90,
+            "MinPrice": 605,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44945,
+                "DepartureDate": "2021-11-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 44945,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:18:00"
+        },
+        {
+            "QuoteId": 91,
+            "MinPrice": 605,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 46937,
+                "DepartureDate": "2021-11-06T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 46937,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:47:00"
+        },
+        {
+            "QuoteId": 92,
+            "MinPrice": 606,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81494,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 81494,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T18:03:00"
+        },
+        {
+            "QuoteId": 93,
+            "MinPrice": 614,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 65698,
+                "DestinationId": 58436,
+                "DepartureDate": "2022-03-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1368
+                ],
+                "OriginId": 58436,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T19:45:00"
+        },
+        {
+            "QuoteId": 94,
+            "MinPrice": 614,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54703,
+                "DepartureDate": "2022-02-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 54703,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T14:02:00"
+        },
+        {
+            "QuoteId": 95,
+            "MinPrice": 615,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68537,
+                "DepartureDate": "2022-03-09T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 68537,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T14:15:00"
+        },
+        {
+            "QuoteId": 96,
+            "MinPrice": 620,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47789,
+                "DepartureDate": "2022-01-31T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 47789,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T06:28:00"
+        },
+        {
+            "QuoteId": 97,
+            "MinPrice": 623,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68340,
+                "DepartureDate": "2022-02-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 68340,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:35:00"
+        },
+        {
+            "QuoteId": 98,
+            "MinPrice": 624,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 51545,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 51545,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:11:00"
+        },
+        {
+            "QuoteId": 99,
+            "MinPrice": 624,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42653,
+                "DepartureDate": "2021-11-09T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 42653,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-21T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:08:00"
+        },
+        {
+            "QuoteId": 100,
+            "MinPrice": 625,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68133,
+                "DepartureDate": "2022-01-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 68133,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T04:15:00"
+        },
+        {
+            "QuoteId": 101,
+            "MinPrice": 626,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74920,
+                "DepartureDate": "2022-01-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 74920,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T20:53:00"
+        },
+        {
+            "QuoteId": 102,
+            "MinPrice": 628,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    84461
+                ],
+                "OriginId": 67662,
+                "DestinationId": 68178,
+                "DepartureDate": "2022-05-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    84461
+                ],
+                "OriginId": 68178,
+                "DestinationId": 67662,
+                "DepartureDate": "2022-05-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T21:23:00"
+        },
+        {
+            "QuoteId": 103,
+            "MinPrice": 630,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44996,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 44996,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:32:00"
+        },
+        {
+            "QuoteId": 104,
+            "MinPrice": 631,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65634,
+                "DepartureDate": "2021-08-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65634,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:55:00"
+        },
+        {
+            "QuoteId": 105,
+            "MinPrice": 632,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 49757,
+                "DepartureDate": "2021-11-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 49757,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-05T22:27:00"
+        },
+        {
+            "QuoteId": 106,
+            "MinPrice": 636,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 51538,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 51538,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T05:59:00"
+        },
+        {
+            "QuoteId": 107,
+            "MinPrice": 642,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 41024,
+                "DepartureDate": "2021-11-13T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 41024,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T12:51:00"
+        },
+        {
+            "QuoteId": 108,
+            "MinPrice": 653,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42605,
+                "DepartureDate": "2021-12-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 42605,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T13:30:00"
+        },
+        {
+            "QuoteId": 109,
+            "MinPrice": 657,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 67662,
+                "DestinationId": 75629,
+                "DepartureDate": "2021-11-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 75629,
+                "DestinationId": 67662,
+                "DepartureDate": "2021-11-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:28:00"
+        },
+        {
+            "QuoteId": 110,
+            "MinPrice": 663,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68818,
+                "DepartureDate": "2021-11-24T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 68818,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:24:00"
+        },
+        {
+            "QuoteId": 111,
+            "MinPrice": 666,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54642,
+                "DepartureDate": "2021-11-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 54642,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T09:32:00"
+        },
+        {
+            "QuoteId": 112,
+            "MinPrice": 670,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 49369,
+                "DestinationId": 42610,
+                "DepartureDate": "2021-10-18T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 42610,
+                "DestinationId": 49369,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T17:03:00"
+        },
+        {
+            "QuoteId": 113,
+            "MinPrice": 670,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42707,
+                "DepartureDate": "2021-11-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 42707,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:17:00"
+        },
+        {
+            "QuoteId": 114,
+            "MinPrice": 673,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 41020,
+                "DepartureDate": "2021-08-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 41020,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:38:00"
+        },
+        {
+            "QuoteId": 115,
+            "MinPrice": 676,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82642,
+                "DepartureDate": "2021-10-19T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 82642,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:01:00"
+        },
+        {
+            "QuoteId": 116,
+            "MinPrice": 676,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 59352,
+                "DepartureDate": "2021-12-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 59352,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:05:00"
+        },
+        {
+            "QuoteId": 117,
+            "MinPrice": 678,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79807,
+                "DepartureDate": "2021-09-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 79807,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T21:09:00"
+        },
+        {
+            "QuoteId": 118,
+            "MinPrice": 681,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54704,
+                "DepartureDate": "2021-06-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 54704,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T05:35:00"
+        },
+        {
+            "QuoteId": 119,
+            "MinPrice": 689,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84601,
+                "DepartureDate": "2021-10-27T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 84601,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T12:13:00"
+        },
+        {
+            "QuoteId": 120,
+            "MinPrice": 698,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68197,
+                "DepartureDate": "2021-11-20T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 68197,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:09:00"
+        },
+        {
+            "QuoteId": 121,
+            "MinPrice": 699,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54023,
+                "DepartureDate": "2021-11-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 54023,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:11:00"
+        },
+        {
+            "QuoteId": 122,
+            "MinPrice": 701,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47448,
+                "DepartureDate": "2021-11-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 47448,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:12:00"
+        },
+        {
+            "QuoteId": 123,
+            "MinPrice": 715,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 72266,
+                "DepartureDate": "2021-10-03T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 72266,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T21:23:00"
+        },
+        {
+            "QuoteId": 124,
+            "MinPrice": 716,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45156,
+                "DepartureDate": "2022-01-05T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 45156,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:44:00"
+        },
+        {
+            "QuoteId": 125,
+            "MinPrice": 717,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65560,
+                "DepartureDate": "2022-05-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65560,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-05-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T21:19:00"
+        },
+        {
+            "QuoteId": 126,
+            "MinPrice": 719,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68489,
+                "DepartureDate": "2021-09-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68489,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-22T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T21:26:00"
+        },
+        {
+            "QuoteId": 127,
+            "MinPrice": 721,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 60750,
+                "DepartureDate": "2021-10-18T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 60750,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-25T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T07:42:00"
+        },
+        {
+            "QuoteId": 128,
+            "MinPrice": 722,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68322,
+                "DepartureDate": "2021-09-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 68322,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T19:54:00"
+        },
+        {
+            "QuoteId": 129,
+            "MinPrice": 727,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79184,
+                "DepartureDate": "2021-10-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 79184,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T14:26:00"
+        },
+        {
+            "QuoteId": 130,
+            "MinPrice": 734,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 50183,
+                "DepartureDate": "2021-11-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 50183,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-13T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:45:00"
+        },
+        {
+            "QuoteId": 131,
+            "MinPrice": 737,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42985,
+                "DepartureDate": "2021-10-27T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 42985,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:46:00"
+        },
+        {
+            "QuoteId": 132,
+            "MinPrice": 744,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79555,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 79555,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:05:00"
+        },
+        {
+            "QuoteId": 133,
+            "MinPrice": 747,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82403,
+                "DepartureDate": "2021-12-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 82403,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T05:09:00"
+        },
+        {
+            "QuoteId": 134,
+            "MinPrice": 747,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40935,
+                "DepartureDate": "2021-09-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 40935,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T19:18:00"
+        },
+        {
+            "QuoteId": 135,
+            "MinPrice": 758,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65604,
+                "DepartureDate": "2021-07-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65604,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:33:00"
+        },
+        {
+            "QuoteId": 136,
+            "MinPrice": 763,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 52388,
+                "DepartureDate": "2021-06-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 52388,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:02:00"
+        },
+        {
+            "QuoteId": 137,
+            "MinPrice": 771,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79316,
+                "DepartureDate": "2022-02-28T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 79316,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-11T00:00:00"
             },
             "QuoteDateTime": "2021-06-08T10:20:00"
         },
         {
-            "QuoteId": 4,
-            "MinPrice": 102,
+            "QuoteId": 138,
+            "MinPrice": 776,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45623,
+                "DepartureDate": "2022-01-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45623,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T08:16:00"
+        },
+        {
+            "QuoteId": 139,
+            "MinPrice": 787,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79325,
+                "DepartureDate": "2021-06-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 79325,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-06-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:36:00"
+        },
+        {
+            "QuoteId": 140,
+            "MinPrice": 787,
             "Direct": true,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1065
+                    881
                 ],
-                "OriginId": 68033,
-                "DestinationId": 82404,
+                "OriginId": 65698,
+                "DestinationId": 47175,
+                "DepartureDate": "2022-02-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 47175,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:53:00"
+        },
+        {
+            "QuoteId": 141,
+            "MinPrice": 791,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40065,
+                "DepartureDate": "2021-11-03T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 40065,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:50:00"
+        },
+        {
+            "QuoteId": 142,
+            "MinPrice": 791,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45299,
+                "DepartureDate": "2021-11-09T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45299,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T13:11:00"
+        },
+        {
+            "QuoteId": 143,
+            "MinPrice": 798,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 59078,
+                "DestinationId": 82003,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 82003,
+                "DestinationId": 59078,
+                "DepartureDate": "2021-11-13T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T20:54:00"
+        },
+        {
+            "QuoteId": 144,
+            "MinPrice": 808,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45479,
+                "DepartureDate": "2021-11-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 45479,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T08:10:00"
+        },
+        {
+            "QuoteId": 145,
+            "MinPrice": 810,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79333,
+                "DepartureDate": "2022-03-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 79333,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:31:00"
+        },
+        {
+            "QuoteId": 146,
+            "MinPrice": 818,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43518,
                 "DepartureDate": "2021-11-04T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1065
+                    881
                 ],
-                "OriginId": 82404,
-                "DestinationId": 68033,
-                "DepartureDate": "2021-11-11T00:00:00"
+                "OriginId": 43518,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-25T00:00:00"
             },
-            "QuoteDateTime": "2021-06-08T02:26:00"
+            "QuoteDateTime": "2021-06-09T16:51:00"
         },
         {
-            "QuoteId": 5,
-            "MinPrice": 105,
+            "QuoteId": 147,
+            "MinPrice": 818,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1907
+                ],
+                "OriginId": 65655,
+                "DestinationId": 56764,
+                "DepartureDate": "2021-08-24T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1907
+                ],
+                "OriginId": 56764,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-08-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T21:20:00"
+        },
+        {
+            "QuoteId": 148,
+            "MinPrice": 819,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81521,
+                "DepartureDate": "2021-09-20T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81521,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T01:03:00"
+        },
+        {
+            "QuoteId": 149,
+            "MinPrice": 820,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67753,
+                "DepartureDate": "2022-02-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 67753,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:36:00"
+        },
+        {
+            "QuoteId": 150,
+            "MinPrice": 822,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1907
+                ],
+                "OriginId": 65655,
+                "DestinationId": 72551,
+                "DepartureDate": "2021-08-18T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1907
+                ],
+                "OriginId": 72551,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-08-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T20:33:00"
+        },
+        {
+            "QuoteId": 151,
+            "MinPrice": 825,
             "Direct": true,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1065
+                    838
                 ],
-                "OriginId": 68033,
-                "DestinationId": 54785,
+                "OriginId": 65698,
+                "DestinationId": 68528,
+                "DepartureDate": "2022-01-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 68528,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:59:00"
+        },
+        {
+            "QuoteId": 152,
+            "MinPrice": 826,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 60739,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 60739,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T19:07:00"
+        },
+        {
+            "QuoteId": 153,
+            "MinPrice": 827,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68004,
+                "DepartureDate": "2021-09-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68004,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T00:28:00"
+        },
+        {
+            "QuoteId": 154,
+            "MinPrice": 830,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44619,
+                "DepartureDate": "2021-06-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 44619,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T22:12:00"
+        },
+        {
+            "QuoteId": 155,
+            "MinPrice": 831,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40307,
+                "DepartureDate": "2021-10-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 40307,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T09:56:00"
+        },
+        {
+            "QuoteId": 156,
+            "MinPrice": 835,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47847,
+                "DepartureDate": "2022-02-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 47847,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:23:00"
+        },
+        {
+            "QuoteId": 157,
+            "MinPrice": 836,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 47743,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 47743,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-25T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:56:00"
+        },
+        {
+            "QuoteId": 158,
+            "MinPrice": 842,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 79841,
+                "DepartureDate": "2021-08-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 79841,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T14:04:00"
+        },
+        {
+            "QuoteId": 159,
+            "MinPrice": 843,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82456,
+                "DepartureDate": "2022-02-09T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 82456,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:08:00"
+        },
+        {
+            "QuoteId": 160,
+            "MinPrice": 845,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54658,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 54658,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T13:02:00"
+        },
+        {
+            "QuoteId": 161,
+            "MinPrice": 845,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65358,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65358,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T13:02:00"
+        },
+        {
+            "QuoteId": 162,
+            "MinPrice": 845,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 52164,
+                "DepartureDate": "2022-03-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 52164,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T13:02:00"
+        },
+        {
+            "QuoteId": 163,
+            "MinPrice": 848,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 52055,
+                "DepartureDate": "2021-07-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 52055,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:57:00"
+        },
+        {
+            "QuoteId": 164,
+            "MinPrice": 849,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 58548,
+                "DepartureDate": "2021-11-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 58548,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T12:03:00"
+        },
+        {
+            "QuoteId": 165,
+            "MinPrice": 849,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84748,
+                "DepartureDate": "2021-10-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 84748,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-04T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T22:21:00"
+        },
+        {
+            "QuoteId": 166,
+            "MinPrice": 852,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 52577,
+                "DepartureDate": "2021-11-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 52577,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T10:25:00"
+        },
+        {
+            "QuoteId": 167,
+            "MinPrice": 853,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 72833,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 72833,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T22:11:00"
+        },
+        {
+            "QuoteId": 168,
+            "MinPrice": 854,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67715,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 67715,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T13:08:00"
+        },
+        {
+            "QuoteId": 169,
+            "MinPrice": 863,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42700,
+                "DepartureDate": "2022-03-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 42700,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-03-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T12:19:00"
+        },
+        {
+            "QuoteId": 170,
+            "MinPrice": 869,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67906,
+                "DepartureDate": "2021-08-22T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 67906,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-29T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T09:13:00"
+        },
+        {
+            "QuoteId": 171,
+            "MinPrice": 872,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68527,
+                "DepartureDate": "2021-11-26T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68527,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-12T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T10:12:00"
+        },
+        {
+            "QuoteId": 172,
+            "MinPrice": 883,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 49760,
+                "DepartureDate": "2021-11-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 49760,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:35:00"
+        },
+        {
+            "QuoteId": 173,
+            "MinPrice": 887,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 50246,
+                "DepartureDate": "2021-11-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 50246,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:51:00"
+        },
+        {
+            "QuoteId": 174,
+            "MinPrice": 888,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68570,
+                "DepartureDate": "2022-02-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68570,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:21:00"
+        },
+        {
+            "QuoteId": 175,
+            "MinPrice": 888,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81766,
+                "DepartureDate": "2021-11-18T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81766,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:12:00"
+        },
+        {
+            "QuoteId": 176,
+            "MinPrice": 888,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45208,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45208,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:16:00"
+        },
+        {
+            "QuoteId": 177,
+            "MinPrice": 889,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45090,
+                "DepartureDate": "2021-07-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45090,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-04T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T15:43:00"
+        },
+        {
+            "QuoteId": 178,
+            "MinPrice": 892,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82201,
+                "DepartureDate": "2021-10-30T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 82201,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T19:36:00"
+        },
+        {
+            "QuoteId": 179,
+            "MinPrice": 896,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81478,
+                "DepartureDate": "2021-12-06T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81478,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-13T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T13:57:00"
+        },
+        {
+            "QuoteId": 180,
+            "MinPrice": 897,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 72739,
+                "DepartureDate": "2021-12-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 72739,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-09T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T15:14:00"
+        },
+        {
+            "QuoteId": 181,
+            "MinPrice": 897,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 51617,
+                "DepartureDate": "2022-01-29T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 51617,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-05T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T21:27:00"
+        },
+        {
+            "QuoteId": 182,
+            "MinPrice": 900,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40924,
+                "DepartureDate": "2022-02-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 40924,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T16:21:00"
+        },
+        {
+            "QuoteId": 183,
+            "MinPrice": 915,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 61620,
+                "DepartureDate": "2021-07-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 61620,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-31T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T12:10:00"
+        },
+        {
+            "QuoteId": 184,
+            "MinPrice": 927,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68526,
+                "DepartureDate": "2021-07-19T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 68526,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-27T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T08:07:00"
+        },
+        {
+            "QuoteId": 185,
+            "MinPrice": 938,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65979,
+                "DepartureDate": "2021-08-16T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65979,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T13:59:00"
+        },
+        {
+            "QuoteId": 186,
+            "MinPrice": 939,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 50041,
+                "DepartureDate": "2021-12-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 50041,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-03T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T20:41:00"
+        },
+        {
+            "QuoteId": 187,
+            "MinPrice": 942,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40107,
                 "DepartureDate": "2021-07-22T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1065
+                    1793
                 ],
-                "OriginId": 54785,
-                "DestinationId": 68033,
-                "DepartureDate": "2021-08-02T00:00:00"
+                "OriginId": 40107,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-25T00:00:00"
             },
-            "QuoteDateTime": "2021-06-08T13:02:00"
+            "QuoteDateTime": "2021-06-09T11:21:00"
         },
         {
-            "QuoteId": 6,
-            "MinPrice": 108,
-            "Direct": true,
-            "OutboundLeg": {
-                "CarrierIds": [
-                    1065
-                ],
-                "OriginId": 68033,
-                "DestinationId": 81484,
-                "DepartureDate": "2021-07-02T00:00:00"
-            },
-            "InboundLeg": {
-                "CarrierIds": [
-                    1065
-                ],
-                "OriginId": 81484,
-                "DestinationId": 68033,
-                "DepartureDate": "2021-07-06T00:00:00"
-            },
-            "QuoteDateTime": "2021-06-08T03:21:00"
-        },
-        {
-            "QuoteId": 7,
-            "MinPrice": 124,
+            "QuoteId": 188,
+            "MinPrice": 946,
             "Direct": false,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 50290,
-                "DestinationId": 81925,
-                "DepartureDate": "2021-08-29T00:00:00"
+                "OriginId": 65698,
+                "DestinationId": 41215,
+                "DepartureDate": "2021-08-24T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 81925,
-                "DestinationId": 50290,
+                "OriginId": 41215,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T12:25:00"
+        },
+        {
+            "QuoteId": 189,
+            "MinPrice": 953,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54742,
+                "DepartureDate": "2021-10-04T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 54742,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T16:19:00"
+        },
+        {
+            "QuoteId": 190,
+            "MinPrice": 953,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40216,
+                "DepartureDate": "2021-08-19T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 40216,
+                "DestinationId": 65698,
                 "DepartureDate": "2021-08-31T00:00:00"
             },
-            "QuoteDateTime": "2021-06-06T06:52:00"
+            "QuoteDateTime": "2021-06-09T09:53:00"
         },
         {
-            "QuoteId": 8,
-            "MinPrice": 127,
+            "QuoteId": 191,
+            "MinPrice": 970,
             "Direct": false,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 47847,
-                "DestinationId": 82404,
-                "DepartureDate": "2021-06-15T00:00:00"
+                "OriginId": 65698,
+                "DestinationId": 81534,
+                "DepartureDate": "2021-09-06T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1467
+                    1793
                 ],
-                "OriginId": 82404,
-                "DestinationId": 47847,
-                "DepartureDate": "2021-06-17T00:00:00"
+                "OriginId": 81534,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-20T00:00:00"
             },
-            "QuoteDateTime": "2021-06-07T21:22:00"
+            "QuoteDateTime": "2021-06-07T16:43:00"
         },
         {
-            "QuoteId": 9,
-            "MinPrice": 140,
-            "Direct": true,
-            "OutboundLeg": {
-                "CarrierIds": [
-                    1556
-                ],
-                "OriginId": 50290,
-                "DestinationId": 96234,
-                "DepartureDate": "2021-07-24T00:00:00"
-            },
-            "InboundLeg": {
-                "CarrierIds": [
-                    1556
-                ],
-                "OriginId": 96234,
-                "DestinationId": 50290,
-                "DepartureDate": "2021-07-24T00:00:00"
-            },
-            "QuoteDateTime": "2021-06-08T07:53:00"
-        },
-        {
-            "QuoteId": 10,
-            "MinPrice": 141,
+            "QuoteId": 192,
+            "MinPrice": 970,
             "Direct": false,
             "OutboundLeg": {
                 "CarrierIds": [
-                    1065
+                    1793
                 ],
-                "OriginId": 67759,
-                "DestinationId": 81484,
+                "OriginId": 65698,
+                "DestinationId": 56472,
+                "DepartureDate": "2021-07-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 56472,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:16:00"
+        },
+        {
+            "QuoteId": 193,
+            "MinPrice": 971,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45440,
+                "DepartureDate": "2021-10-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45440,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T00:22:00"
+        },
+        {
+            "QuoteId": 194,
+            "MinPrice": 972,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54651,
+                "DepartureDate": "2021-08-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 54651,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T15:51:00"
+        },
+        {
+            "QuoteId": 195,
+            "MinPrice": 981,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 68135,
+                "DepartureDate": "2021-10-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 68135,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:46:00"
+        },
+        {
+            "QuoteId": 196,
+            "MinPrice": 987,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 54276,
+                "DepartureDate": "2021-09-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 54276,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-17T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T18:30:00"
+        },
+        {
+            "QuoteId": 197,
+            "MinPrice": 987,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 56670,
+                "DepartureDate": "2021-10-14T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 56670,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T13:32:00"
+        },
+        {
+            "QuoteId": 198,
+            "MinPrice": 992,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81573,
+                "DepartureDate": "2021-08-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81573,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T10:25:00"
+        },
+        {
+            "QuoteId": 199,
+            "MinPrice": 1006,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 44905,
+                "DepartureDate": "2021-10-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 44905,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-10T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T14:52:00"
+        },
+        {
+            "QuoteId": 200,
+            "MinPrice": 1011,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 74945,
+                "DepartureDate": "2021-10-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 74945,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-04T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T20:14:00"
+        },
+        {
+            "QuoteId": 201,
+            "MinPrice": 1028,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 67662,
+                "DestinationId": 67949,
+                "DepartureDate": "2021-07-29T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 67949,
+                "DestinationId": 67662,
+                "DepartureDate": "2021-08-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T15:11:00"
+        },
+        {
+            "QuoteId": 202,
+            "MinPrice": 1031,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45301,
+                "DepartureDate": "2021-10-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45301,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T06:28:00"
+        },
+        {
+            "QuoteId": 203,
+            "MinPrice": 1036,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    50441
+                ],
+                "OriginId": 65655,
+                "DestinationId": 40627,
+                "DepartureDate": "2021-07-20T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 40627,
+                "DestinationId": 65655,
+                "DepartureDate": "2021-08-20T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T12:02:00"
+        },
+        {
+            "QuoteId": 204,
+            "MinPrice": 1041,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84787,
+                "DepartureDate": "2021-09-17T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 84787,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-10-02T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T07:20:00"
+        },
+        {
+            "QuoteId": 205,
+            "MinPrice": 1042,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67893,
+                "DepartureDate": "2021-09-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 67893,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T09:46:00"
+        },
+        {
+            "QuoteId": 206,
+            "MinPrice": 1047,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40577,
+                "DepartureDate": "2021-07-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 40577,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T12:10:00"
+        },
+        {
+            "QuoteId": 207,
+            "MinPrice": 1060,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81536,
+                "DepartureDate": "2021-06-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 81536,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-19T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T23:35:00"
+        },
+        {
+            "QuoteId": 208,
+            "MinPrice": 1089,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43083,
+                "DepartureDate": "2021-07-25T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1324
+                ],
+                "OriginId": 43083,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T11:16:00"
+        },
+        {
+            "QuoteId": 209,
+            "MinPrice": 1092,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65362,
+                "DepartureDate": "2021-08-02T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65362,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T17:29:00"
+        },
+        {
+            "QuoteId": 210,
+            "MinPrice": 1095,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 75427,
                 "DepartureDate": "2021-06-18T00:00:00"
             },
             "InboundLeg": {
                 "CarrierIds": [
-                    1065
+                    1793
                 ],
-                "OriginId": 81484,
-                "DestinationId": 67759,
-                "DepartureDate": "2021-06-22T00:00:00"
+                "OriginId": 75427,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-08T00:00:00"
             },
-            "QuoteDateTime": "2021-06-08T00:57:00"
+            "QuoteDateTime": "2021-06-07T16:49:00"
+        },
+        {
+            "QuoteId": 211,
+            "MinPrice": 1108,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 49234,
+                "DepartureDate": "2021-09-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 49234,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-23T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T09:49:00"
+        },
+        {
+            "QuoteId": 212,
+            "MinPrice": 1122,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 84460,
+                "DepartureDate": "2021-07-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 84460,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-26T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T03:18:00"
+        },
+        {
+            "QuoteId": 213,
+            "MinPrice": 1130,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 63713,
+                "DepartureDate": "2022-02-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 63713,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T20:29:00"
+        },
+        {
+            "QuoteId": 214,
+            "MinPrice": 1138,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65736,
+                "DepartureDate": "2022-02-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65736,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-02-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T11:19:00"
+        },
+        {
+            "QuoteId": 215,
+            "MinPrice": 1140,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 59359,
+                "DepartureDate": "2021-11-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 59359,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-11-07T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T21:01:00"
+        },
+        {
+            "QuoteId": 216,
+            "MinPrice": 1146,
+            "Direct": true,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82003,
+                "DepartureDate": "2022-04-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    838
+                ],
+                "OriginId": 82003,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-04-08T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-08T14:08:00"
+        },
+        {
+            "QuoteId": 217,
+            "MinPrice": 1154,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 51529,
+                "DepartureDate": "2021-11-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 51529,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-12-02T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T06:32:00"
+        },
+        {
+            "QuoteId": 218,
+            "MinPrice": 1156,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45665,
+                "DepartureDate": "2021-07-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 45665,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T08:24:00"
+        },
+        {
+            "QuoteId": 219,
+            "MinPrice": 1159,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 81830,
+                "DepartureDate": "2021-07-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 81830,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T10:27:00"
+        },
+        {
+            "QuoteId": 220,
+            "MinPrice": 1194,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 82446,
+                "DepartureDate": "2021-07-08T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 82446,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T16:00:00"
+        },
+        {
+            "QuoteId": 221,
+            "MinPrice": 1209,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45193,
+                "DepartureDate": "2021-07-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 45193,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-25T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T17:27:00"
+        },
+        {
+            "QuoteId": 222,
+            "MinPrice": 1214,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 67662,
+                "DestinationId": 68185,
+                "DepartureDate": "2021-08-23T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 68185,
+                "DestinationId": 67662,
+                "DepartureDate": "2021-09-01T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T14:14:00"
+        },
+        {
+            "QuoteId": 223,
+            "MinPrice": 1227,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 43135,
+                "DepartureDate": "2021-07-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 43135,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-16T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T02:54:00"
+        },
+        {
+            "QuoteId": 224,
+            "MinPrice": 1254,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 73176,
+                "DepartureDate": "2021-06-11T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 73176,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-07-06T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T19:28:00"
+        },
+        {
+            "QuoteId": 225,
+            "MinPrice": 1274,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 80052,
+                "DepartureDate": "2021-06-15T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 80052,
+                "DestinationId": 65698,
+                "DepartureDate": "2022-01-02T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T07:00:00"
+        },
+        {
+            "QuoteId": 226,
+            "MinPrice": 1340,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 65394,
+                "DepartureDate": "2021-07-21T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65394,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-18T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T18:16:00"
+        },
+        {
+            "QuoteId": 227,
+            "MinPrice": 1340,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 45284,
+                "DepartureDate": "2021-08-10T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 45284,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-24T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T16:29:00"
+        },
+        {
+            "QuoteId": 228,
+            "MinPrice": 1350,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 65698,
+                "DestinationId": 61381,
+                "DepartureDate": "2021-09-01T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1859
+                ],
+                "OriginId": 61381,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-09-15T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T06:03:00"
+        },
+        {
+            "QuoteId": 229,
+            "MinPrice": 1419,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    981
+                ],
+                "OriginId": 65698,
+                "DestinationId": 42841,
+                "DepartureDate": "2021-08-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    981
+                ],
+                "OriginId": 42841,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-28T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T17:09:00"
+        },
+        {
+            "QuoteId": 230,
+            "MinPrice": 1447,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 40057,
+                "DepartureDate": "2021-06-12T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 40057,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-06-13T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-09T12:32:00"
+        },
+        {
+            "QuoteId": 231,
+            "MinPrice": 1841,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 65698,
+                "DestinationId": 67654,
+                "DepartureDate": "2021-06-27T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    881
+                ],
+                "OriginId": 67654,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-06-30T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-06T17:33:00"
+        },
+        {
+            "QuoteId": 232,
+            "MinPrice": 2504,
+            "Direct": false,
+            "OutboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 65698,
+                "DestinationId": 61278,
+                "DepartureDate": "2021-08-07T00:00:00"
+            },
+            "InboundLeg": {
+                "CarrierIds": [
+                    1793
+                ],
+                "OriginId": 61278,
+                "DestinationId": 65698,
+                "DepartureDate": "2021-08-14T00:00:00"
+            },
+            "QuoteDateTime": "2021-06-07T17:33:00"
         }
 ]

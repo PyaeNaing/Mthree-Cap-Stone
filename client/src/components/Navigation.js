@@ -36,7 +36,7 @@ const Navigation = () => {
                     
                 </Nav>
 
-                <Form className="d-flex" style={{marginLeft: "40%"}} >
+                <Form className="d-flex" style={{marginLeft: "55%"}} >
                     <FormControl
                         type="search"
                         placeholder="Search"
