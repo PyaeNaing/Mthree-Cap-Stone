@@ -1,54 +1,43 @@
 import React, { useState, useEffect } from 'react'
 import FlightItem from './FlightItem';
-import {Button, Form, Spinner} from "react-bootstrap"
+import { Button, Form, PageItem, Spinner } from "react-bootstrap"
+import axios from 'axios';
 import '../css/FlightItem.css'
+import Pagination from './Pagination';
 
 const FlightTable = () => {
 
   const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
+  const [flightData, setFlightData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [maxValue, setMaxValue] = useState('');
-  
+
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostPerPage] = useState(10);
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+
+  const currentPost = filteredData.slice(indexOfFirstPost, indexOfLastPost);
+  const paginate = (pageNumber) => {setCurrentPage(pageNumber)}
+
+  // :)
   const sleep = (milliseconds) => {
     return new Promise(resolve => setTimeout(resolve, milliseconds))
   }
-  
-  /*Use like so*/
-  
 
-
-  const getData = () => {
-    setLoading(true);
-    fetch('DUMMY_DATA.json'
-      , {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setData(myJson);
-        setFilteredData(myJson);
-        setLoading(false);
-      });
-  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setLoading(true);
-    await sleep(500);
-    if(maxValue.length === 0) {
+    // await sleep(500);
+    if (maxValue.length === 0) {
       setLoading(false);
-      return setFilteredData(data);
+      return setFilteredData(flightData);
     }
 
-    setFilteredData(data.filter(item => {
+    setFilteredData(flightData.filter(item => {
       return item.MinPrice < maxValue;
     }))
 
@@ -56,9 +45,16 @@ const FlightTable = () => {
     setLoading(false);
   }
 
+  const getData = async () => {
+    setLoading(true);
+    const res = await axios.get('/DUMMY_DATA.json');
+    setFlightData(res.data);
+    setFilteredData(res.data);
+    setLoading(false);
+  }
+
   useEffect(() => {
-    
-    getData()
+    getData();
   }, [])
 
   return (
@@ -71,21 +67,19 @@ const FlightTable = () => {
         </label>
         <Button variant="primary" type="submit">Submit</Button>
       </Form>
-      
-      {isLoading ? (<Spinner className='spinner-center' animation="border"/>) : 
-      (filteredData.map(item => (
-        <FlightItem
-          key={item.QuoteId}
-          OriginId={item.OutboundLeg.OriginId}
-          DestinationId={item.OutboundLeg.DestinationId}
-          DepartureDate={item.OutboundLeg.DepartureDate}
-          MinPrice={item.MinPrice} />
-      )))}
-      {}
+
+      {isLoading ? (<Spinner className='spinner-center' animation="border" />) :
+        (currentPost.map(item => (
+          <FlightItem
+            key={item.QuoteId}
+            OriginId={item.OutboundLeg.OriginId}
+            DestinationId={item.OutboundLeg.DestinationId}
+            DepartureDate={item.OutboundLeg.DepartureDate}
+            MinPrice={item.MinPrice} />
+        )))}
+        <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate}/>
     </div>
-
   );
-
 }
 
 export default FlightTable
