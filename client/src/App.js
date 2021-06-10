@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div style={
         { backgroundImage: `url('https://i.stack.imgur.com/pMAiU.jpg')`,
-          backgroundSize: '100%' }
+          backgroundSize: '100%', minHeight: "100vh"}
       }>
 
         <BrowserRouter>

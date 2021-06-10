@@ -8,6 +8,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Alert from 'react-bootstrap/Alert';
 
 import { BsChevronDoubleRight } from "react-icons/bs";
+import { Badge } from 'react-bootstrap';
 
 
 class FlightForm extends Component {
@@ -70,7 +71,7 @@ class FlightForm extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Airport:</h1>
+                                <h2><Badge>Airport:</Badge></h2>
                             </Col>
                             <Col>
                                 <h1>{(this.state.from >= 0) ? this.props.data[this.state.from].PlaceName : ""}</h1>
@@ -87,7 +88,7 @@ class FlightForm extends Component {
 
                         <Row>
                             <Col>
-                                <h1>Country:</h1>
+                                <h1><Badge>Country:</Badge></h1>
                             </Col>
                             <Col>
                                 <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].CountryName : ""}</h3>
@@ -100,11 +101,11 @@ class FlightForm extends Component {
                             </Col>
                         </Row>
 
-                        
-
+                        <hr />
+                                
                         <Row>
                             <Col>
-                                <h1>State:</h1>
+                                <h1><Badge>State:</Badge></h1>
                             </Col>
                             <Col>
                                 <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
