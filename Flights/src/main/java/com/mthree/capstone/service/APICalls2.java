@@ -9,6 +9,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Repository;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+
 @Repository
 public class APICalls2 {
 
@@ -26,6 +30,14 @@ public class APICalls2 {
         String url = String.format(base, URLEncoder.encode(query, StandardCharsets.UTF_8.toString()));
         JSONObject myObj = getRapidAPICall(url).getBody().getObject();
         JSONArray results = myObj.getJSONArray("Places");
+        return results;
+    }
+
+    public JSONArray getFromToFlights(String fromPlace, String toPlace) throws UnirestException, UnsupportedEncodingException {
+        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/"+fromPlace+"/"+toPlace+"/anytime/anytime";
+        String url = String.format(base, URLEncoder.encode(fromPlace, StandardCharsets.UTF_8.toString()));
+        JSONObject myObj = getRapidAPICall(url).getBody().getObject();
+        JSONArray results = myObj.getJSONArray("Quotes");
         return results;
     }
 
