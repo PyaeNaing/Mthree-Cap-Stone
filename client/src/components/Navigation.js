@@ -26,17 +26,17 @@ const Navigation = () => {
                     navbarScroll
                 >
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="#action2">Schedule</Nav.Link>
+                    <Nav.Link href="/schedule">Schedule</Nav.Link>
                     <NavDropdown title="Link" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">Cheap flights</NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">Best time to travel</NavDropdown.Item>
+                        <NavDropdown.Item href="/cheapFlights">Cheap flights</NavDropdown.Item>
+                        <NavDropdown.Item href="/bestTime">Best time to travel</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
                     </NavDropdown>
                     
                 </Nav>
 
-                <Form className="d-flex" style={{marginLeft: "55%"}} >
+                {/* <Form className="d-flex" style={{marginLeft: "0%", width: "25%"}} >
                     <FormControl
                         type="search"
                         placeholder="Search"
@@ -44,7 +44,7 @@ const Navigation = () => {
                         aria-label="Search"
                     />
                     <Button variant="outline-success">Search</Button>
-                </Form>
+                </Form> */}
             </Navbar.Collapse>
                 </Navbar>
     )

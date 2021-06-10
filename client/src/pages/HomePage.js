@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import backGround from '../BackGround.jpg';
 import FlightTable from '../components/FlightTable'
 import FlightForm from '../components/FlightForm';
 class HomePage extends Component {

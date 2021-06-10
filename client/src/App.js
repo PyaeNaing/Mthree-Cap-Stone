@@ -7,6 +7,9 @@ import backGround from "./BackGround.jpg"
 
 import { BrowserRouter } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
+import SchedulePage from "./pages/SchedulePage";
+import CheapFlightsPage from "./pages/CheapFlightsPage";
+import BestTimePage from "./pages/BestTimePage";
 
 class App extends Component {
   render() {
@@ -21,8 +24,11 @@ class App extends Component {
         <BrowserRouter>
         <Navigation />
         <Switch>
+          <Route exact path="/schedule" component={SchedulePage} />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/cheapFlights" component={CheapFlightsPage} />
+          <Route exact path="/bestTime" component={BestTimePage} />
         </Switch>
       </BrowserRouter>
       </div>
