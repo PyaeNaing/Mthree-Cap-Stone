@@ -1,4 +1,4 @@
-package controllers;
+package com.mthree.flightAPI.controllers;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
