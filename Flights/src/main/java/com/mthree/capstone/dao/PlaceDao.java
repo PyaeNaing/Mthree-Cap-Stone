@@ -1,7 +1,7 @@
-package dao;
+package com.mthree.capstone.dao;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
-import models.Place;
+import com.mthree.capstone.models.Place;
 
 import java.io.UnsupportedEncodingException;
 import java.util.List;
