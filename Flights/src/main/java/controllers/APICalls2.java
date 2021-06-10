@@ -48,14 +48,28 @@ public class APICalls2 {
         }
     }
 
-//    public JSONArray getFlights(String in, String out, String outbound, String inbound) {
-//        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/%s/%s/%s?inboundpartialdate=%s";
-//        String url = String.format(base, URLEncoder.encode(in))
-//    }
-//
-//    public JSONArray getFlights(String in, String out, String outbound) {
-//
-//    }
+    public JSONArray getFlights(String in, String out, String outbound, String inbound) throws UnsupportedEncodingException, UnirestException {
+        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/%s/%s/%s?inboundpartialdate=%s";
+        String in_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String out_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String outbound_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String inbound_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String url = String.format(base, in_encode, out_encode, outbound_encode, inbound_encode);
+        JSONObject myObj = getRapidAPICall(url).getBody().getObject();
+        JSONArray results = myObj.getJSONArray("Quotes");
+        return results;
+    }
+
+    public JSONArray getFlights(String in, String out, String outbound) throws UnsupportedEncodingException, UnirestException {
+        String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/%s/%s/%s";
+        String in_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String out_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String outbound_encode = URLEncoder.encode(in, StandardCharsets.UTF_8.toString());
+        String url = String.format(base, in_encode, out_encode, outbound_encode);
+        JSONObject myObj = getRapidAPICall(url).getBody().getObject();
+        JSONArray results = myObj.getJSONArray("Quotes");
+        return results;
+    }
 
     private String snipSky(JSONObject jsonObj, String key) {
         String query = jsonObj.getString(key);
