@@ -63,11 +63,17 @@ const FlightTable = () => {
     <div className='flight-results'>
 
       <Form onSubmit={handleSubmit}>
+      <Row>
         <Col>
           <SelectSearch />
+        </Col>
+        <Col>
           <input type="text" value={maxValue} onChange={e => setMaxValue(e.target.value)} />
+        </Col>
+        <Col>
           <Button variant="primary" type="submit">Submit</Button>
         </Col>
+      </Row>
 
       </Form>
       <div style={{ marginTop: '10px' }}>
