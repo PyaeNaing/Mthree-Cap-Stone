@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Flights/src/main/java/com/mthree/capstone/service/APICalls2.java
+package com.mthree.capstone.service;
+=======
 package com.mthree.flightAPI.controllers;
+>>>>>>> frontend:Flights/src/main/java/com/mthree/flightAPI/controllers/APICalls2.java
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
@@ -7,21 +11,23 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.stereotype.Repository;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
+@Repository
 public class APICalls2 {
 
-    public static void main(String[] args) {
-        APICalls2 api = new APICalls2();
-        try {
-            api.printLocationTableFromQuery("Mexico");
-        } catch (UnirestException | UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void main(String[] args) {
+//        APICalls2 api = new APICalls2();
+//        try {
+//            api.printLocationTableFromQuery("Mexico");
+//        } catch (UnirestException | UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public JSONArray getLocationsFromQuery(String query) throws UnirestException, UnsupportedEncodingException {
         String base = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=%s";
