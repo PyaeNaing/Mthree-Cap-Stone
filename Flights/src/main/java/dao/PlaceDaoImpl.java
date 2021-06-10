@@ -102,7 +102,7 @@ public class PlaceDaoImpl implements PlaceDao {
         return jdbcTemplate.query(sql, new PlaceMapper());
     }
 
-    // helper method to ensure no duplicates are inserted into Place table
+    // helper method to check if there is a duplicate in Place table
     public boolean isDuplicate (String placeId) {
         List<Place> places = getAll();
         for (int i = 0; i < places.size(); i ++) {
