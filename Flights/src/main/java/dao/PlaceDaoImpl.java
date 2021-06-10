@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.mashape.unirest.http.HttpResponse;
@@ -97,8 +98,19 @@ public class PlaceDaoImpl implements PlaceDao {
 
     @Override
     public List<Place> getAll() {
-        final String sql = "SELECT * FROM place;";
+        final String sql = "SELECT * FROM flightsdb.place;";
         return jdbcTemplate.query(sql, new PlaceMapper());
+    }
+
+    // helper method to ensure no duplicates are inserted into Place table
+    public boolean isDuplicate (String placeId) {
+        List<Place> places = getAll();
+        for (int i = 0; i < places.size(); i ++) {
+            if (places.get(i).getPlaceId().equalsIgnoreCase(placeId)){
+                return true;
+            }
+        }
+        return false;
     }
 
     private HttpResponse<JsonNode> getRapidAPICall(String url) throws UnirestException {
