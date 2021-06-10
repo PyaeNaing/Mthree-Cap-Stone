@@ -37,7 +37,6 @@ class HomePage extends Component {
                 <div className="container">
                     <div className="text-center">
                         {/* <h1>Flight Analysis</h1> */}
-
                         {/* Drop Down Selects to fetch compiled data */}
                         <FlightForm data={this.state.places} />
                         <FlightTable />

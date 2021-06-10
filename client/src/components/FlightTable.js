@@ -60,6 +60,7 @@ const FlightTable = () => {
   return (
 
     <div className='flight-results'>
+      
       <Form onSubmit={handleSubmit}>
         <label>
           Maximun Price:
@@ -67,7 +68,9 @@ const FlightTable = () => {
         </label>
         <Button variant="primary" type="submit">Submit</Button>
       </Form>
-
+      <div style={{marginTop:'10px'}}>
+      <Pagination postsPerPage={postsPerPage} totalPosts={filteredData.length} paginate={paginate}/>
+      </div>
       {isLoading ? (<Spinner className='spinner-center' animation="border" />) :
         (currentPost.map(item => (
           <FlightItem
