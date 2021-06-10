@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import Alert from 'react-bootstrap/Alert';
 
 import { BsChevronDoubleRight } from "react-icons/bs";
 
@@ -32,6 +33,9 @@ class FlightForm extends Component {
     render() {
         return (
             <Container fluid>
+                {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary"> 
+                    Choose a location to fly from and land at... 
+                </Alert>}
                 <form>
                     <hr />
                     <Row>
@@ -66,6 +70,9 @@ class FlightForm extends Component {
                     <Container>
                         <Row>
                             <Col>
+                                <h1>Airport:</h1>
+                            </Col>
+                            <Col>
                                 <h1>{(this.state.from >= 0) ? this.props.data[this.state.from].PlaceName : ""}</h1>
                             </Col>
                             <Col>
@@ -80,6 +87,9 @@ class FlightForm extends Component {
 
                         <Row>
                             <Col>
+                                <h1>Country:</h1>
+                            </Col>
+                            <Col>
                                 <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].CountryName : ""}</h3>
                             </Col>
                             <Col>
@@ -93,6 +103,9 @@ class FlightForm extends Component {
                         
 
                         <Row>
+                            <Col>
+                                <h1>State:</h1>
+                            </Col>
                             <Col>
                                 <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
                             </Col>
