@@ -8,7 +8,7 @@ const Navigation = () => {
 
     return (
         <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={logo}
@@ -17,7 +17,7 @@ const Navigation = () => {
                             className="d-inline-block align-top"
                         />{' '}
                         </Navbar.Brand>
-                        <Navbar.Brand href="#">Flight Analysis </Navbar.Brand>
+                        <Navbar.Brand href="/">Flight Analysis </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -25,13 +25,13 @@ const Navigation = () => {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                 >
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Current Flight Schdule</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="#action2">Schedule</Nav.Link>
                     <NavDropdown title="Link" id="navbarScrollingDropdown">
                         <NavDropdown.Item href="#action3">Cheap flights</NavDropdown.Item>
                         <NavDropdown.Item href="#action4">Best time to travel</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">About</NavDropdown.Item>
+                        <NavDropdown.Item href="/about">About</NavDropdown.Item>
                     </NavDropdown>
                     
                 </Nav>

@@ -33,6 +33,7 @@ class FlightForm extends Component {
         return (
             <Container fluid>
                 <form>
+                    <hr />
                     <Row>
                         <Col>
                             <select onChange={this.changeFrom}>
@@ -89,6 +90,8 @@ class FlightForm extends Component {
                             </Col>
                         </Row>
 
+                        
+
                         <Row>
                             <Col>
                                 <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
@@ -105,9 +108,6 @@ class FlightForm extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
-
-
-                
 
             </Container>
         )

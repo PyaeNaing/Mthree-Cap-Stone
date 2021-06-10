@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import FlightTable from '../components/FlightTable'
 import FlightForm from '../components/FlightForm';
-import Navigation from '../components/Navigation'
 class HomePage extends Component {
 
     constructor(props) {
@@ -33,7 +32,6 @@ class HomePage extends Component {
 
         return (
             <div>
-                <Navigation />
                 <div className="container">
                     <div className="text-center">
                         {/* <h1>Flight Analysis</h1> */}
