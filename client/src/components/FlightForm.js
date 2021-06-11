@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import { Spinner } from 'react-bootstrap';
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Jumbotron from 'react-bootstrap/Jumbotron'
@@ -17,6 +18,8 @@ class FlightForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: false,
+
             from: -1,
             to: -1,
 
@@ -57,41 +60,44 @@ class FlightForm extends Component {
     }
 
     async searchOrigins(event) {
-        console.log(this.state.searchO);
-
+        this.setState({loading: true})
         axios.get('http://localhost:8080/api/place/' + this.state.searchO)
             .then(res => {
                 const places = res.data;
                 console.log(places);
                 this.setState({ origins: places });
+                this.setState({loading: false})
             })
-
         event.preventDefault();
     }
 
     async searchDestinations(event) {
         console.log(this.state.searchD);
+        this.setState({loading: true})
 
         axios.get('http://localhost:8080/api/place/' + this.state.searchD)
             .then(res => {
                 const places = res.data;
                 console.log(places);
                 this.setState({ destinations: places });
+                this.setState({loading: false})
+
             })
 
         event.preventDefault();
     }
 
     getFlights = (event) => {
-
         if (this.state.to >= 0 && this.state.from >= 0) {
-
+            this.setState({loading : true});
             axios.get('http://localhost:8080/api/flight/from/' + this.state.origins[this.state.from].PlaceId + '/to/' + this.state.destinations[this.state.to].PlaceId)
                 .then(res => {
                     console.log(res.data);
                     this.setState({ flightInfo: res.data });
+                    this.setState({loading : false})
                 })
         }
+
     }
 
 
@@ -109,6 +115,9 @@ class FlightForm extends Component {
                                 <input value={this.state.searchO} onChange={this.changeOrigin} type="text" />
                                 <input type="submit" value="Search" />
                             </form>
+                        </Col>
+                        <Col>
+                        { this.state.loading === true ? (<Spinner animation="border" />) : (<div>  </div>)}
                         </Col>
                         <Col>
                             <form onSubmit={this.searchDestinations}>
@@ -204,11 +213,14 @@ class FlightForm extends Component {
                         </Container>
                     </Jumbotron>
                 </Container>
+                {this.state.loading === true ? (<Spinner animation="border" />) : (<div> </div>)}
                 {this.state.flightInfo.length === 0 ?
-                    (<h2 style={{
+                    (
+                    <h2 style={{
                         color: "white",
                         textAlign: "center"
-                    }}> No Flights Found </h2>)
+                    }}> No Flights Found </h2>
+                    )
                     : (<FlightTable data={this.state.flightInfo}
                         origin={this.state.origins[this.state.from].PlaceName}
                         destnation={this.state.destinations[this.state.to].PlaceName} />)}
