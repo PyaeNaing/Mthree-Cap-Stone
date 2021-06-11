@@ -208,7 +208,7 @@ class FlightForm extends Component {
                     (<h2 style={{
                         color: "white",
                         textAlign: "center"
-                    }}> No Data </h2>)
+                    }}> No Flights Found </h2>)
                     : (<FlightTable data={this.state.flightInfo}
                         origin={this.state.origins[this.state.from].PlaceName}
                         destnation={this.state.destinations[this.state.to].PlaceName} />)}
