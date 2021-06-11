@@ -67,6 +67,8 @@ class FlightForm extends Component {
                 console.log(places);
                 this.setState({ origins: places });
                 this.setState({loading: false})
+            }).catch(err => {
+                this.setState({loading: false})
             })
         event.preventDefault();
     }
@@ -82,6 +84,8 @@ class FlightForm extends Component {
                 this.setState({ destinations: places });
                 this.setState({loading: false})
 
+            }).catch(err => {
+                this.setState({loading: false})
             })
 
         event.preventDefault();
@@ -95,6 +99,8 @@ class FlightForm extends Component {
                     console.log(res.data);
                     this.setState({ flightInfo: res.data });
                     this.setState({loading : false})
+                }).catch(err => {
+                    this.setState({loading: false})
                 })
         }
 
