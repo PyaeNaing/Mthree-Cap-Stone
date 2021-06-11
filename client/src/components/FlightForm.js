@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 import axios from 'axios';
-
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Alert from 'react-bootstrap/Alert';
-
+import FlightTable from './FlightTable';
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { Badge } from 'react-bootstrap';
 
@@ -24,11 +23,15 @@ class FlightForm extends Component {
             searchO: '',
             searchD: '',
 
+            originID : '',
+            destId: '',
+
             origins: [],
-            destinations: []
+            destinations: [],
 
+            flightInfo : []
         }
-
+        
         this.changeOrigin = this.changeOrigin.bind(this); 
         this.changeDestination = this.changeDestination.bind(this);
 
@@ -79,9 +82,18 @@ class FlightForm extends Component {
         event.preventDefault();
     }
 
+    getFlights = (event) => {
+        axios.get('http://localhost:8080/api/flight/from/' + this.state.origins[this.state.from].PlaceId + '/to/' + this.state.destinations[this.state.to].PlaceId)
+        .then(res =>{
+            console.log(res.data);
+            this.setState({flightInfo : res.data});
+        })
+    }
+
 
     render() {
         return (
+            <div>
             <Container fluid>
                 {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary">
                     Choose a location to fly from and land at...
@@ -183,12 +195,13 @@ class FlightForm extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Button>Find best Month to Travel</Button>
+                            <Button onClick={this.getFlights}>Find best Month to Travel</Button>
                         </Row>
                     </Container>
                 </Jumbotron>
-
             </Container>
+            {this.state.flightInfo === 0 ? (<FlightTable data={[]}/>) : (<FlightTable data={this.state.flightInfo} />)}
+            </div>
         )
     }
 }
