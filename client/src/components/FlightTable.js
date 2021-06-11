@@ -52,10 +52,11 @@ const FlightTable = (props) => {
       let res = [];
       console.log("in Flight Table loading Data")
       console.log(props.data);
-      if(props.data === 0) {res = props.data}
-      else {res = await axios.get('/DUMMY_DATA.json');}
-      setFlightData(res.data);
-      setFilteredData(res.data);
+      if(props.data.length != 0) {res = props.data}
+      // else {res = await axios.get('/DUMMY_DATA.json');}
+      console.log(res);
+      setFlightData(res);
+      setFilteredData(res);
       setLoading(false);
   
 
@@ -90,8 +91,8 @@ const FlightTable = (props) => {
         (currentPost.map(item => (
           <FlightItem
             key={item.QuoteId}
-            OriginId={item.OutboundLeg.OriginId}
-            DestinationId={item.OutboundLeg.DestinationId}
+            OriginId={props.origin}
+            DestinationId={props.destnation}
             DepartureDate={item.OutboundLeg.DepartureDate}
             MinPrice={item.MinPrice} />
         )))}
