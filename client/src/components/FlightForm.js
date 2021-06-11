@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import axios from 'axios';
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -19,7 +21,19 @@ class FlightForm extends Component {
             from: -1,
             to: -1,
 
+            searchO: '',
+            searchD: '',
+
+            origins: [],
+            destinations: []
+
         }
+
+        this.changeOrigin = this.changeOrigin.bind(this); 
+        this.changeDestination = this.changeDestination.bind(this);
+
+        this.searchOrigins = this.searchOrigins.bind(this); 
+        this.searchDestinations= this.searchDestinations.bind(this);
     }
 
     changeFrom = event => {
@@ -30,20 +44,71 @@ class FlightForm extends Component {
         this.setState({ to: event.target.value });
     }
 
+    //handling search forms
+    changeOrigin(event) {
+        this.setState({searchO: event.target.value})
+    }
+    
+    changeDestination(event) {
+        this.setState({searchD: event.target.value})
+    }
+
+    async searchOrigins(event) {
+        console.log(this.state.searchO);
+
+        axios.get('http://localhost:8080/api/place/' + this.state.searchO)
+            .then(res => {
+                const places = res.data; 
+                console.log(places);
+                this.setState({origins: places});
+            })
+
+        event.preventDefault();
+    }
+
+    async searchDestinations(event) {
+        console.log(this.state.searchD);
+
+        axios.get('http://localhost:8080/api/place/' + this.state.searchD)
+            .then(res => {
+                const places = res.data; 
+                console.log(places);
+                this.setState({destinations: places});
+            })
+
+        event.preventDefault();
+    }
+
 
     render() {
         return (
             <Container fluid>
-                {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary"> 
-                    Choose a location to fly from and land at... 
+                {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary">
+                    Choose a location to fly from and land at...
                 </Alert>}
+
+                <Row>
+                    <Col>
+                        <form onSubmit={this.searchOrigins}>
+                            <input value={this.state.searchO} onChange={this.changeOrigin} type="text" />
+                            <input type="submit" value="Search" />
+                        </form>
+                    </Col>
+                    <Col>
+                        <form onSubmit={this.searchDestinations}>
+                            <input value={this.state.searchD} onChange={this.changeDestination} type="text" />
+                            <input type="submit" value="Search" />
+                        </form>
+                    </Col>
+                </Row>
+
                 <form>
                     <hr />
                     <Row>
                         <Col>
                             <select onChange={this.changeFrom}>
                                 <option disabled selected>Leaving From...</option>
-                                {this.props.data.map((place, index) => {
+                                {this.state.origins.map((place, index) => {
                                     return (
                                         <option value={index}>{place.PlaceName}</option>
                                     )
@@ -55,7 +120,7 @@ class FlightForm extends Component {
                         <Col>
                             <select onChange={this.changeTo}>
                                 <option disabled selected>Going to...</option>
-                                {this.props.data.map((place, index) => {
+                                {this.state.destinations.map((place, index) => {
                                     return (
                                         <option value={index}>{place.PlaceName}</option>
                                     )
@@ -74,13 +139,13 @@ class FlightForm extends Component {
                                 <h2><Badge>Airport:</Badge></h2>
                             </Col>
                             <Col>
-                                <h1>{(this.state.from >= 0) ? this.props.data[this.state.from].PlaceName : ""}</h1>
+                                <h1>{(this.state.from >= 0) ? this.state.origins[this.state.from].PlaceName : ""}</h1>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={50} />
                             </Col>
                             <Col>
-                                <h1>{(this.state.to >= 0) ? this.props.data[this.state.to].PlaceName : ""}</h1>
+                                <h1>{(this.state.to >= 0) ? this.state.destinations[this.state.to].PlaceName : ""}</h1>
                             </Col>
                         </Row>
 
@@ -91,30 +156,30 @@ class FlightForm extends Component {
                                 <h1><Badge>Country:</Badge></h1>
                             </Col>
                             <Col>
-                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].CountryName : ""}</h3>
+                                <h3>{(this.state.from >= 0) ? this.state.origins[this.state.from].CountryName : ""}</h3>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={25} />
                             </Col>
                             <Col>
-                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].CountryName : ""}</h3>
+                                <h3>{(this.state.to >= 0) ? this.state.destinations[this.state.to].CountryName : ""}</h3>
                             </Col>
                         </Row>
 
                         <hr />
-                                
+
                         <Row>
                             <Col>
                                 <h1><Badge>State:</Badge></h1>
                             </Col>
                             <Col>
-                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
+                                <h3>{(this.state.from >= 0) ? this.state.origins[this.state.from].RegionId : ""}</h3>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={25} />
                             </Col>
                             <Col>
-                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].RegionId : ""}</h3>
+                                <h3>{(this.state.to >= 0) ? this.state.destinations[this.state.to].RegionId : ""}</h3>
                             </Col>
                         </Row>
                         <Row>
