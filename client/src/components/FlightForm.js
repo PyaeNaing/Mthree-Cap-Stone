@@ -69,7 +69,7 @@ class FlightForm extends Component {
                 {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary">
                     Choose a location to fly from and land at...
                 </Alert>}
-                <form>
+                <form onSubmit={this.submitHandler}>
                     <hr />
                     <Row>
                         <Col>
@@ -87,7 +87,7 @@ class FlightForm extends Component {
 
                         </Col>
                         <Col>
-                            <Button onClick={this.submitHandler}>Subtmit</Button>
+                        <Button as="input" type="submit" value="Submit" />{' '}
                         </Col>
                     </Row>
 
