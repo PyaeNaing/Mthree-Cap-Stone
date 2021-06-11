@@ -10,10 +10,14 @@
         <module name="FlightsAPI" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Flights" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Flights" options="-parameters" />
+      <module name="FlightsAPI" options="-parameters" />
     </option>
   </component>
 </project>

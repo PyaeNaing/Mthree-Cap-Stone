@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Axios from 'axios';
 import Button from "react-bootstrap/Button";
 import { Container, Form } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
@@ -9,6 +9,7 @@ import Alert from 'react-bootstrap/Alert';
 
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { Badge } from 'react-bootstrap';
+import axios from 'axios';
 
 
 class FlightForm extends Component {
@@ -18,12 +19,21 @@ class FlightForm extends Component {
         this.state = {
             from: '',
             to: '',
-
+            data: []
         }
     }
 
-    handleSubmit = event => {
+    submitHandler = event => {
         event.preventDefault();
+        this.setState({
+            from: '',
+            to: ''
+        })
+        axios.get('http://localhost:8080/api/place/' + this.state.from)
+            .then(res => {
+                console.log(res);
+            })
+
     }
 
     changeFrom = event => {
@@ -33,7 +43,6 @@ class FlightForm extends Component {
     changeTo = event => {
         this.setState({ to: event.target.value });
     }
-
 
     render() {
         return (
@@ -46,7 +55,7 @@ class FlightForm extends Component {
                     <Row>
                         <Col>
                             <Container>
-                                <Form.Control placeholder="From" />
+                                <Form.Control onChange={this.changeFrom} value={this.state.from}    placeholder="From" />
                             </Container>
                             {/* <select onChange={this.changeFrom}>
                                 <option disabled selected>Leaving From...</option>
@@ -73,7 +82,7 @@ class FlightForm extends Component {
                             </select> */}
                         </Col>
                         <Col>
-                            <Button>Subtmit</Button>
+                            <Button onClick={this.submitHandler}>Subtmit</Button>
                         </Col>
                     </Row>
 
