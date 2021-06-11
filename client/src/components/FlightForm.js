@@ -19,21 +19,39 @@ class FlightForm extends Component {
         this.state = {
             from: '',
             to: '',
-            data: []
+            data: [],
+            destination: false,
         }
     }
 
     submitHandler = event => {
         event.preventDefault();
+        if (this.state.to === '') {
+            this.setState({destination : true});
+            console.log('only getting location')
+            axios.get('http://localhost:8080/api/place/' + this.state.from)
+            .then(res => {
+                console.log(res);
+                this.setState({ data: res.data })
+            }).catch(e => {
+                console.log(e)
+            })
+        }
+        else{
+            this.setState({destination : true});
+            console.log('Getting Both')
+            axios.get('http://localhost:8080/api/flight/from/' + this.state.from + '/to/' + this.state.to)
+            .then(res => {
+                this.setState({data : res.data});
+            }).catch(e => {
+                console.log(e)
+            })
+        }
         this.setState({
             from: '',
             to: ''
         })
-        axios.get('http://localhost:8080/api/place/' + this.state.from)
-            .then(res => {
-                console.log(res);
-                this.setState({ data: res.data })
-            })
+
 
     }
 
@@ -64,7 +82,7 @@ class FlightForm extends Component {
 
                         <Col>
                             <Container>
-                                <Form.Control placeholder="To" />
+                            <Form.Control onChange={this.changeTo} value={this.state.to} placeholder="To" />
                             </Container>
 
                         </Col>
@@ -78,7 +96,8 @@ class FlightForm extends Component {
                 <hr />
 
                 <Jumbotron fluid style={{ backgroundColor: "#6c6c82" }}>
-                    <Table striped bordered hover>
+                    {this.state.destination ? (
+                        <Table striped bordered hover>
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -105,6 +124,36 @@ class FlightForm extends Component {
                                 </tr>))}
                         </tbody>
                     </Table>
+                    ) : (
+                        <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>PlaceName</th>
+                                <th>CountryId</th>
+                                <th>PlaceId</th>
+                                <th>CityId</th>
+                                <th>CountryName</th>
+                                <th>RegionId</th>
+                                <th>PlaceId</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.state.data.map((item, index) => (
+                                <tr>
+                                    <th>{index}</th>
+                                    <th>{item.PlaceName}</th>
+                                    <th>{item.CountryId}</th>
+                                    <th>{item.PlaceId}</th>
+                                    <th>{item.CityId}</th>
+                                    <th>{item.CountryName}</th>
+                                    <th>{item.RegionId}</th>
+                                    <th>{item.PlaceId}</th>
+                                </tr>))}
+                        </tbody>
+                    </Table>
+                    )}
+                    
                 </Jumbotron>
 
             </Container>

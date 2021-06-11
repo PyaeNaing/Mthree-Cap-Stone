@@ -28,7 +28,7 @@ public class FlightController {
     }
 
     // TODO: currently URL hardcoded for testing. Must fix.
-    @GetMapping("to/{fromPlace}/from/{toPlace}")
+    @GetMapping("from/{fromPlace}/to/{toPlace}")
     public ResponseEntity<List<Object>> getFlights(@PathVariable String fromPlace, @PathVariable String toPlace) {
         try {
             JSONArray result = api.getFromToFlights(fromPlace, toPlace);
