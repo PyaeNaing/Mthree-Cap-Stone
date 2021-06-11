@@ -200,10 +200,14 @@ class FlightForm extends Component {
                     </Container>
                 </Jumbotron>
             </Container>
-            {this.state.flightInfo.length === 0 ? (<div> No Data </div>)
+            {this.state.flightInfo.length === 0 ?
+            (<h2 style={{
+                color: "white",
+                textAlign: "center"
+              }}> No Data </h2>)
             : (<FlightTable data={this.state.flightInfo}
-            origin={this.state.origins[this.state.from].PlaceId}
-            destnation={this.state.destinations[this.state.to].PlaceId} />)}
+            origin={this.state.origins[this.state.from].PlaceName}
+            destnation={this.state.destinations[this.state.to].PlaceName} />)}
             </div>
         )
     }
