@@ -29,6 +29,7 @@ public class FlightController {
 
 
     // TODO: currently URL hardcoded for testing. Must fix.
+    @CrossOrigin
     @GetMapping("from/{fromPlace}/to/{toPlace}")
     public ResponseEntity<List<Object>> getFlights(@PathVariable String fromPlace, @PathVariable String toPlace) {
         try {
