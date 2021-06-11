@@ -32,7 +32,9 @@ class FlightForm extends Component {
             origins: [],
             destinations: [],
 
-            flightInfo: []
+            flightInfo: [],
+
+            error: false
         }
 
         this.changeOrigin = this.changeOrigin.bind(this);
@@ -43,11 +45,11 @@ class FlightForm extends Component {
     }
 
     changeFrom = event => {
-        this.setState({ from: event.target.value });
+        this.setState({ from: event.target.value, flightInfo: [] });
     }
 
     changeTo = event => {
-        this.setState({ to: event.target.value });
+        this.setState({ to: event.target.value, flightInfo: [] });
     }
 
     //handling search forms
@@ -60,32 +62,32 @@ class FlightForm extends Component {
     }
 
     async searchOrigins(event) {
-        this.setState({loading: true})
+        this.setState({ loading: true, flightInfo: [], from: -1 })
         axios.get('http://localhost:8080/api/place/' + this.state.searchO)
             .then(res => {
                 const places = res.data;
                 console.log(places);
                 this.setState({ origins: places });
-                this.setState({loading: false})
+                this.setState({ loading: false })
             }).catch(err => {
-                this.setState({loading: false})
+                this.setState({ loading: false })
             })
         event.preventDefault();
     }
 
     async searchDestinations(event) {
         console.log(this.state.searchD);
-        this.setState({loading: true})
+        this.setState({ loading: true, flightInfo: [], to: -1 })
 
         axios.get('http://localhost:8080/api/place/' + this.state.searchD)
             .then(res => {
                 const places = res.data;
                 console.log(places);
                 this.setState({ destinations: places });
-                this.setState({loading: false})
+                this.setState({ loading: false })
 
             }).catch(err => {
-                this.setState({loading: false})
+                this.setState({ loading: false })
             })
 
         event.preventDefault();
@@ -93,15 +95,18 @@ class FlightForm extends Component {
 
     getFlights = (event) => {
         if (this.state.to >= 0 && this.state.from >= 0) {
-            this.setState({loading : true});
+            this.setState({ loading: true, error: false });
             axios.get('http://localhost:8080/api/flight/from/' + this.state.origins[this.state.from].PlaceId + '/to/' + this.state.destinations[this.state.to].PlaceId)
                 .then(res => {
                     console.log(res.data);
                     this.setState({ flightInfo: res.data });
-                    this.setState({loading : false})
+                    this.setState({ loading: false })
                 }).catch(err => {
-                    this.setState({loading: false})
+                    this.setState({ loading: false })
                 })
+        }
+        else {
+            this.setState({ error: true })
         }
 
     }
@@ -112,23 +117,27 @@ class FlightForm extends Component {
             <div>
                 <Container fluid>
                     {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary">
-                        Choose a location to fly from and land at...
+                        Search and Select an Origin and Destination.
                 </Alert>}
+
+                    {this.state.error && <Alert variant="danger">Error: You must select an Origin and Destination!!!</Alert>}
 
                     <Row>
                         <Col>
                             <form onSubmit={this.searchOrigins}>
                                 <input value={this.state.searchO} onChange={this.changeOrigin} type="text" />
-                                <input type="submit" value="Search" />
+
+                                <input type="submit" value="Search Origins" />
                             </form>
                         </Col>
                         <Col>
-                        { this.state.loading === true ? (<Spinner animation="border" />) : (<div>  </div>)}
+                            {this.state.loading === true ? (<Spinner animation="border" />) : (<div>  </div>)}
                         </Col>
                         <Col>
                             <form onSubmit={this.searchDestinations}>
+
                                 <input value={this.state.searchD} onChange={this.changeDestination} type="text" />
-                                <input type="submit" value="Search" />
+                                <input type="submit" value="Search Destinations" />
                             </form>
                         </Col>
                     </Row>
@@ -137,26 +146,32 @@ class FlightForm extends Component {
                         <hr />
                         <Row>
                             <Col>
+                                <label style={{color: "white"}}>Origins:
+                                <br />
                                 <select onChange={this.changeFrom}>
-                                    <option disabled selected>Leaving From...</option>
-                                    {this.state.origins.map((place, index) => {
-                                        return (
-                                            <option value={index}>{place.PlaceName}</option>
-                                        )
-                                    })}
-                                </select>
+                                        <option disabled selected>Leaving From...</option>
+                                        {this.state.origins.map((place, index) => {
+                                            return (
+                                                <option value={index}>{place.PlaceName}</option>
+                                            )
+                                        })}
+                                    </select>
+                                </label>
                             </Col>
 
 
                             <Col>
+                                <label style={{color: "white"}}>Destinations:
+                                <br />
                                 <select onChange={this.changeTo}>
-                                    <option disabled selected>Going to...</option>
-                                    {this.state.destinations.map((place, index) => {
-                                        return (
-                                            <option value={index}>{place.PlaceName}</option>
-                                        )
-                                    })}
-                                </select>
+                                        <option disabled selected>Going to...</option>
+                                        {this.state.destinations.map((place, index) => {
+                                            return (
+                                                <option value={index}>{place.PlaceName}</option>
+                                            )
+                                        })}
+                                    </select>
+                                </label>
                             </Col>
                         </Row>
                     </form>
@@ -222,10 +237,10 @@ class FlightForm extends Component {
                 {this.state.loading === true ? (<Spinner animation="border" />) : (<div> </div>)}
                 {this.state.flightInfo.length === 0 ?
                     (
-                    <h2 style={{
-                        color: "white",
-                        textAlign: "center"
-                    }}> No Flights Found </h2>
+                        <h2 style={{
+                            color: "white",
+                            textAlign: "center"
+                        }}> No Flights Found </h2>
                     )
                     : (<FlightTable data={this.state.flightInfo}
                         origin={this.state.origins[this.state.from].PlaceName}
