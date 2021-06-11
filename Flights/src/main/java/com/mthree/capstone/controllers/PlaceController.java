@@ -91,11 +91,10 @@ public class PlaceController {
             e.printStackTrace();
             return new ResponseEntity(null, HttpStatus.NOT_FOUND);
         }
-
     }
 
-//    @PostMapping
-//    public void addPlaces(@RequestBody String location) throws UnsupportedEncodingException, UnirestException {
-//       dao.addPlaces(location);
-//    }
+    @PostMapping("/{location}")
+    public void addPlaces(@PathVariable String location) throws UnsupportedEncodingException, UnirestException {
+        dao.addPlaces(location);
+    }
 }
