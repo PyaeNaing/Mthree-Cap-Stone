@@ -1,29 +1,38 @@
 import React from 'react'
-// import FlightItem from './FlightItem';
 
-const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
+const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     const pageNumber = [];
-    
-    for(let i = 1; i < Math.ceil(totalPosts / postsPerPage); i++)
-    {
+
+    for (let i = 1; i < Math.ceil(totalPosts / postsPerPage); i++) {
         pageNumber.push(i);
     }
 
     return (
-        <nav>
-            <ul className='pagination'>
-                {pageNumber.map(number => (
-                    <li key={number} className='page-item'>
-                        <a onClick={() =>{
-                            paginate(number);
-                        }} href="!#" className='page-link'>
-                            {number}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-            
-        </nav>
+        <form>
+            <select onChange={(e) => {paginate(e.target.value)}}>
+                <option disabled selected>Select Page</option>
+                {pageNumber.map((page, index) => {
+                    return (
+                        <option value={index + 1}>{page}</option>
+                    )
+                })}
+            </select>
+        </form>
+
+        // <nav>
+        //     <ul className='pagination'>
+        //         {pageNumber.map(number => (
+        //             <li key={number} className='page-item'>
+        //                 <button onClick={() =>{
+        //                     paginate(number);
+
+        //                 }}  className='page-link'>
+        //                     {number}
+        //                 </button>
+        //             </li>
+        //         ))}
+        //     </ul>
+        // </nav>
     )
 }
 

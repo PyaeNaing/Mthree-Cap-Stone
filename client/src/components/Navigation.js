@@ -8,7 +8,7 @@ const Navigation = () => {
 
     return (
         <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={logo}
@@ -17,7 +17,7 @@ const Navigation = () => {
                             className="d-inline-block align-top"
                         />{' '}
                         </Navbar.Brand>
-                        <Navbar.Brand href="#">Flight Analysis </Navbar.Brand>
+                        <Navbar.Brand href="/">Flight Analysis </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -25,18 +25,19 @@ const Navigation = () => {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                 >
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Current Flight Schdule</Nav.Link>
-                    <NavDropdown title="Link" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">Cheap flights</NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">Best time to travel</NavDropdown.Item>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    {/* <Nav.Link href="/schedule">Schedule</Nav.Link> */}
+                    <Nav.Link href="/about">About</Nav.Link>
+                    {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
+                        <NavDropdown.Item href="/cheapFlights">Cheap flights</NavDropdown.Item>
+                        <NavDropdown.Item href="/bestTime">Best time to travel</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action5">About</NavDropdown.Item>
-                    </NavDropdown>
+                        <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                    </NavDropdown> */}
                     
                 </Nav>
 
-                <Form className="d-flex" style={{marginLeft: "55%"}} >
+                {/* <Form className="d-flex" style={{marginLeft: "0%", width: "25%"}} >
                     <FormControl
                         type="search"
                         placeholder="Search"
@@ -44,7 +45,7 @@ const Navigation = () => {
                         aria-label="Search"
                     />
                     <Button variant="outline-success">Search</Button>
-                </Form>
+                </Form> */}
             </Navbar.Collapse>
                 </Navbar>
     )

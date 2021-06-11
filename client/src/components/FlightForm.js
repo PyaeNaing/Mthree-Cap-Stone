@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
+import axios from 'axios';
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Jumbotron from 'react-bootstrap/Jumbotron'
-
+import Alert from 'react-bootstrap/Alert';
+import FlightTable from './FlightTable';
 import { BsChevronDoubleRight } from "react-icons/bs";
+import { Badge } from 'react-bootstrap';
 
 
 class FlightForm extends Component {
@@ -17,7 +20,23 @@ class FlightForm extends Component {
             from: -1,
             to: -1,
 
+            searchO: '',
+            searchD: '',
+
+            originID : '',
+            destId: '',
+
+            origins: [],
+            destinations: [],
+
+            flightInfo : []
         }
+        
+        this.changeOrigin = this.changeOrigin.bind(this); 
+        this.changeDestination = this.changeDestination.bind(this);
+
+        this.searchOrigins = this.searchOrigins.bind(this); 
+        this.searchDestinations= this.searchDestinations.bind(this);
     }
 
     changeFrom = event => {
@@ -28,16 +47,80 @@ class FlightForm extends Component {
         this.setState({ to: event.target.value });
     }
 
+    //handling search forms
+    changeOrigin(event) {
+        this.setState({searchO: event.target.value})
+    }
+    
+    changeDestination(event) {
+        this.setState({searchD: event.target.value})
+    }
+
+    async searchOrigins(event) {
+        console.log(this.state.searchO);
+
+        axios.get('http://localhost:8080/api/place/' + this.state.searchO)
+            .then(res => {
+                const places = res.data; 
+                console.log(places);
+                this.setState({origins: places});
+            })
+
+        event.preventDefault();
+    }
+
+    async searchDestinations(event) {
+        console.log(this.state.searchD);
+
+        axios.get('http://localhost:8080/api/place/' + this.state.searchD)
+            .then(res => {
+                const places = res.data; 
+                console.log(places);
+                this.setState({destinations: places});
+            })
+
+        event.preventDefault();
+    }
+
+    getFlights = (event) => {
+        axios.get('http://localhost:8080/api/flight/from/' + this.state.origins[this.state.from].PlaceId + '/to/' + this.state.destinations[this.state.to].PlaceId)
+        .then(res =>{
+            console.log(res.data);
+            this.setState({flightInfo : res.data});
+        })
+    }
+
 
     render() {
         return (
+            <div>
             <Container fluid>
+                {(this.state.to < 0 || this.state.from < 0) && <Alert variant="primary">
+                    Choose a location to fly from and land at...
+                </Alert>}
+
+                <Row>
+                    <Col>
+                        <form onSubmit={this.searchOrigins}>
+                            <input value={this.state.searchO} onChange={this.changeOrigin} type="text" />
+                            <input type="submit" value="Search" />
+                        </form>
+                    </Col>
+                    <Col>
+                        <form onSubmit={this.searchDestinations}>
+                            <input value={this.state.searchD} onChange={this.changeDestination} type="text" />
+                            <input type="submit" value="Search" />
+                        </form>
+                    </Col>
+                </Row>
+
                 <form>
+                    <hr />
                     <Row>
                         <Col>
                             <select onChange={this.changeFrom}>
                                 <option disabled selected>Leaving From...</option>
-                                {this.props.data.map((place, index) => {
+                                {this.state.origins.map((place, index) => {
                                     return (
                                         <option value={index}>{place.PlaceName}</option>
                                     )
@@ -49,7 +132,7 @@ class FlightForm extends Component {
                         <Col>
                             <select onChange={this.changeTo}>
                                 <option disabled selected>Going to...</option>
-                                {this.props.data.map((place, index) => {
+                                {this.state.destinations.map((place, index) => {
                                     return (
                                         <option value={index}>{place.PlaceName}</option>
                                     )
@@ -65,13 +148,16 @@ class FlightForm extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>{(this.state.from >= 0) ? this.props.data[this.state.from].PlaceName : ""}</h1>
+                                <h2><Badge>Airport:</Badge></h2>
+                            </Col>
+                            <Col>
+                                <h1>{(this.state.from >= 0) ? this.state.origins[this.state.from].PlaceName : ""}</h1>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={50} />
                             </Col>
                             <Col>
-                                <h1>{(this.state.to >= 0) ? this.props.data[this.state.to].PlaceName : ""}</h1>
+                                <h1>{(this.state.to >= 0) ? this.state.destinations[this.state.to].PlaceName : ""}</h1>
                             </Col>
                         </Row>
 
@@ -79,37 +165,50 @@ class FlightForm extends Component {
 
                         <Row>
                             <Col>
-                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].CountryName : ""}</h3>
+                                <h1><Badge>Country:</Badge></h1>
+                            </Col>
+                            <Col>
+                                <h3>{(this.state.from >= 0) ? this.state.origins[this.state.from].CountryName : ""}</h3>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={25} />
                             </Col>
                             <Col>
-                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].CountryName : ""}</h3>
+                                <h3>{(this.state.to >= 0) ? this.state.destinations[this.state.to].CountryName : ""}</h3>
                             </Col>
                         </Row>
 
+                        <hr />
+
                         <Row>
                             <Col>
-                                <h3>{(this.state.from >= 0) ? this.props.data[this.state.from].RegionId : ""}</h3>
+                                <h1><Badge>State:</Badge></h1>
+                            </Col>
+                            <Col>
+                                <h3>{(this.state.from >= 0) ? this.state.origins[this.state.from].RegionId : ""}</h3>
                             </Col>
                             <Col>
                                 <BsChevronDoubleRight size={25} />
                             </Col>
                             <Col>
-                                <h3>{(this.state.to >= 0) ? this.props.data[this.state.to].RegionId : ""}</h3>
+                                <h3>{(this.state.to >= 0) ? this.state.destinations[this.state.to].RegionId : ""}</h3>
                             </Col>
                         </Row>
                         <Row>
-                            <Button>Find best Month to Travel</Button>
+                            <Button onClick={this.getFlights}>Find best Month to Travel</Button>
                         </Row>
                     </Container>
                 </Jumbotron>
-
-
-                
-
             </Container>
+            {this.state.flightInfo.length === 0 ?
+            (<h2 style={{
+                color: "white",
+                textAlign: "center"
+              }}> No Data </h2>)
+            : (<FlightTable data={this.state.flightInfo}
+            origin={this.state.origins[this.state.from].PlaceName}
+            destnation={this.state.destinations[this.state.to].PlaceName} />)}
+            </div>
         )
     }
 }
