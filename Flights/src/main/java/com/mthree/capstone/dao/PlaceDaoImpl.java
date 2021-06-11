@@ -1,5 +1,6 @@
 package com.mthree.capstone.dao;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.mthree.capstone.models.Place;
@@ -43,7 +44,7 @@ public class PlaceDaoImpl implements PlaceDao {
         JSONObject jsonObj;
 
         for (int i = 0; i < results.length(); i++) {
-            Place place = new Place();
+
             jsonObj = results.getJSONObject(i);
             String placeName = jsonObj.getString("PlaceName");
             String countryName = jsonObj.getString("CountryName");
@@ -52,36 +53,27 @@ public class PlaceDaoImpl implements PlaceDao {
             String placeId = snipSky(jsonObj, "PlaceId");
             String cityId = snipSky(jsonObj, "CityId");
 
-            // insert into place
-            final String sql = "INSERT INTO flightsdb.place " +
-                    "(placeId, " +
-                    "placeName, " +
-                    "countryId, " +
-                    "cityId, " +
-                    "countryName, " +
-                    "regionId) " +
-                    "VALUES " +
-                    "(?, " +
-                    "?, " +
-                    "?, " +
-                    "?, " +
-                    "?, " +
-                    "?);";
+            if (!isDuplicate(placeId)) {
+                    // insert into place
+                    final String sql = "INSERT INTO flightsdb.place " +
+                            "(placeId, " +
+                            "placeName, " +
+                            "countryId, " +
+                            "cityId, " +
+                            "countryName, " +
+                            "regionId) " +
+                            "VALUES " +
+                            "(?, " +
+                            "?, " +
+                            "?, " +
+                            "?, " +
+                            "?, " +
+                            "?);";
 
-            jdbcTemplate.update((Connection conn) -> {
 
-                PreparedStatement statement = conn.prepareStatement(
-                        sql,
-                        Statement.RETURN_GENERATED_KEYS);
+                jdbcTemplate.update(sql, placeId,placeName,countryId,cityId,countryName, regionId);
 
-                statement.setString(1, placeId);
-                statement.setString(2, placeName);
-                statement.setString(3, countryId);
-                statement.setString(4, cityId);
-                statement.setString(5, countryName);
-                statement.setString(6, regionId);
-                return statement;
-            });
+            }
         }
     }
 
