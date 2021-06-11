@@ -6,10 +6,10 @@ import '../css/FlightItem.css'
 import Pagination from './Pagination';
 import SelectSearch from './SelectSearch';
 
-const FlightTable = () => {
+const FlightTable = (props) => {
 
   const [isLoading, setLoading] = useState(true);
-  const [flightData, setFlightData] = useState([]);
+  const [flightData, setFlightData] = useState(props.data);
   const [filteredData, setFilteredData] = useState([]);
   const [maxValue, setMaxValue] = useState('');
 
@@ -47,11 +47,19 @@ const FlightTable = () => {
   }
 
   const getData = async () => {
-    setLoading(true);
-    const res = await axios.get('/DUMMY_DATA.json');
-    setFlightData(res.data);
-    setFilteredData(res.data);
-    setLoading(false);
+
+      setLoading(true);
+      let res = [];
+      console.log("in Flight Table loading Data")
+      console.log(props.data);
+      if(props.data.length != 0) {res = props.data}
+      // else {res = await axios.get('/DUMMY_DATA.json');}
+      console.log(res);
+      setFlightData(res);
+      setFilteredData(res);
+      setLoading(false);
+  
+
   }
 
   useEffect(() => {
@@ -83,8 +91,8 @@ const FlightTable = () => {
         (currentPost.map(item => (
           <FlightItem
             key={item.QuoteId}
-            OriginId={item.OutboundLeg.OriginId}
-            DestinationId={item.OutboundLeg.DestinationId}
+            OriginId={props.origin}
+            DestinationId={props.destnation}
             DepartureDate={item.OutboundLeg.DepartureDate}
             MinPrice={item.MinPrice} />
         )))}

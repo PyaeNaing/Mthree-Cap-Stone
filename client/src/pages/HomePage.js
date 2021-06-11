@@ -36,7 +36,6 @@ class HomePage extends Component {
                         {/* <h1>Flight Analysis</h1> */}
                         {/* Drop Down Selects to fetch compiled data */}
                         <FlightForm data={this.state.places} />
-                        <FlightTable />
                     </div>
                 </div>
             </div>

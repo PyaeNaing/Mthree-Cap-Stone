@@ -26,13 +26,14 @@ const Navigation = () => {
                     navbarScroll
                 >
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/schedule">Schedule</Nav.Link>
-                    <NavDropdown title="Link" id="navbarScrollingDropdown">
+                    {/* <Nav.Link href="/schedule">Schedule</Nav.Link> */}
+                    <Nav.Link href="/about">About</Nav.Link>
+                    {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
                         <NavDropdown.Item href="/cheapFlights">Cheap flights</NavDropdown.Item>
                         <NavDropdown.Item href="/bestTime">Best time to travel</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
-                    </NavDropdown>
+                    </NavDropdown> */}
                     
                 </Nav>
 
